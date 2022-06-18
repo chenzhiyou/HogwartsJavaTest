@@ -27,4 +27,12 @@ public class TagExampleTest {
         System.out.println("预发布环境+测试环境");
     }
 
+    /**
+     * 当使用标签时，标签名对应的是自定义标签的标签名
+     */
+    @PreprodTest
+    void hogwarts5(){
+        System.out.println("自定义标签");
+    }
+
 }
