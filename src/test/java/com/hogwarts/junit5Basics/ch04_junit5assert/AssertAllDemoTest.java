@@ -1,6 +1,9 @@
 package com.hogwarts.junit5Basics.ch04_junit5assert;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -25,5 +28,17 @@ public class AssertAllDemoTest {
                 ()->assertEquals(2, 1+1),
                 ()->assertEquals(3, 1+1),
                 ()->assertEquals(4, 1+1));
+    }
+
+    @Test
+    void assertAllDemo2(){
+        // 把断言内容放到list内，统一进行断言
+        ArrayList<Executable> executions = new ArrayList<Executable>();
+        System.out.println("断言测试assertAll场景");
+        executions.add(()->assertEquals(2, 1+1));
+        executions.add(()->assertEquals(3, 1+1));
+        executions.add(()->assertEquals(4, 1+1));
+        assertAll("执行流", executions.stream());
+
     }
 }
