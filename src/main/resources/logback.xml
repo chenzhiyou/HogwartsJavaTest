@@ -13,7 +13,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.ceshiren" level="DEBUG" />
+    <logger name="com.hogwarts" level="DEBUG" />
     <logger name="com" level="WARN" />
     <logger name="ceshiren" level="WARN" />
     <logger name="org" level="WARN" />
