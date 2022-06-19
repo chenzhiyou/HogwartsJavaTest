@@ -4,6 +4,9 @@ import com.hogwarts.ceshiren.Calculator;
 import org.junit.jupiter.api.*;
 import org.slf4j.Logger;
 
+import java.lang.reflect.Method;
+import java.util.Optional;
+
 import static java.lang.invoke.MethodHandles.lookup;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
@@ -31,6 +34,8 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class CalculatorTest {
     static final Logger logger = getLogger(lookup().lookupClass());
     static Calculator calculator;
+    public int result;
+    public String strResult;
 
     @BeforeAll
     static void beforeAll(){
@@ -44,7 +49,11 @@ public class CalculatorTest {
     }
 
     @AfterEach
-    void afterEach(){
+    void afterEach(TestInfo testInfo){
+        Optional<Method> testMethod = testInfo.getTestMethod();
+        String string = testInfo.getTestMethod().map(Method::getName).filter(str -> str.startsWith("str"))
+                        .ofNullable(strResult).orElseGet(()->String.valueOf(result));
+        logger.info("计算结果为:"+ string);
         calculator.destroyId();
     }
 
@@ -56,8 +65,7 @@ public class CalculatorTest {
     @Test
     @DisplayName("整数相加")
     void Ca_add_001(){
-        int result = calculator.sum(1, 1);
-        logger.info("计算结果为："+ result);
+        result = calculator.sum(1, 1);
         assertEquals(2, result);
     }
 
@@ -65,32 +73,28 @@ public class CalculatorTest {
     @DisplayName("三个整数相加")
     void Ca_add_002(){
 
-        int result = calculator.sum(1, 1, 9);
-        logger.info("计算结果为："+ result);
+        result = calculator.sum(1, 1, 9);
         assertEquals(11, result);
     }
 
     @Test
     @DisplayName("有效边界值相加，99+99")
     void Ca_add_003(){
-        int result = calculator.sum(99, 99);
-        logger.info("计算结果为："+ result);
+        result = calculator.sum(99, 99);
         assertEquals(198, result);
     }
 
     @Test
     @DisplayName("有效边界值相加，-99+99")
     void Ca_add_004(){
-        int result = calculator.sum(-99, 99);
-        logger.info("计算结果为："+ result);
+        result = calculator.sum(-99, 99);
         assertEquals(0, result);
     }
 
     @Test
     @DisplayName("有效边界值相加，-99+(-99)")
     void Ca_add_005(){
-        int result = calculator.sum(-99, -99);
-        logger.info("计算结果为："+ result);
+        result = calculator.sum(-99, -99);
         assertEquals(-198, result);
     }
 
@@ -126,88 +130,85 @@ public class CalculatorTest {
         Exception exception = assertThrows(IllegalArgumentException.class, ()->calculator.sum(1,-100));
         String message = exception.getMessage().toString();
         assertThat("失败断言",message, is(containsString("请输入范围内的整数！")));
-
-
-
     }
 
     @Test
     @DisplayName("2个整数相减")
     void Ca_add_010(){
-        int result = calculator.subtract(10, 10);
+        result = calculator.subtract(10, 10);
         assertEquals(0, result);
     }
 
     @Test
     @DisplayName("有效边界值相减 99-99")
     void Ca_add_011(){
-        int result = calculator.subtract(99, 99);
+        result = calculator.subtract(99, 99);
         assertEquals(0, result);
     }
 
     @Test
     @DisplayName("有效边界值相减 -99-99")
     void Ca_add_012(){
-        int result = calculator.subtract(-99, 99);
+        result = calculator.subtract(-99, 99);
         assertEquals(-198, result);
     }
 
     @Test
     @DisplayName("有效边界值相减 99-(-99)")
     void Ca_add_013(){
-        int result = calculator.subtract(99, -99);
+        result = calculator.subtract(99, -99);
         assertEquals(198, result);
     }
 
     @Test
     @DisplayName("有效边界值相减 -99-(-99)")
     void Ca_add_014(){
-        int result = calculator.subtract(-99, -99);
+        result = calculator.subtract(-99, -99);
         assertEquals(0, result);
     }
 
     @Test
     @DisplayName("无效边界值 100-0")
     void Ca_add_015(){
-        int result = calculator.subtract(100, 0);
+        result = calculator.subtract(100, 0);
     }
 
     @Test
     @DisplayName("无效边界值 -100-(-1)")
     void Ca_add_016(){
-        int result = calculator.subtract(-100, -1);
+        result = calculator.subtract(-100, -1);
     }
 
     @Test
     @DisplayName("无效边界值 2-100")
     void Ca_add_017(){
-        int result = calculator.subtract(2, 100);
+        result = calculator.subtract(2, 100);
     }
 
     @Test
     @DisplayName("无效边界值 1-(-100)")
     void Ca_add_018(){
-        int result = calculator.subtract(1, -100);
+        result = calculator.subtract(1, -100);
     }
 
     @Test
     @DisplayName("字符串拼接")
     void Ca_add_019(){
-        String result = calculator.concatStr("Hello", "Junit5");
-        assertEquals("Hello Junit5", result);
+        strResult = calculator.concatStr("Hello", "Junit5");
+        assertEquals("Hello Junit5", strResult);
     }
 
     @Test
     @DisplayName("字符串拼接")
     void Ca_add_020(){
-        String result = calculator.concatStr("你好", "世界");
-        assertEquals("你好 世界", result);
+        strResult = calculator.concatStr("你好", "世界");
+        assertEquals("你好 世界", strResult);
     }
 
     @Test
     @DisplayName("字符串拼接")
     void Ca_add_021(){
-        String result = calculator.concatStr("这里", "是", "北京");
-        assertEquals("这里 是 北京", result);
+        strResult = calculator.concatStr("这里", "是", "北京");
+        assertEquals("这里 是 北京", strResult);
     }
 }
