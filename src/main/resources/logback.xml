@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- name指定<appender>的名称    class指定<appender>的全限定名  ConsoleAppender的作用是将日志输出到控制台-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!--   写入的文件名，可以使相对目录也可以是绝对目录，如果上级目录不存在则自动创建     -->
+        <!--        <file>123.log</file>-->
+        <!--  append 为true表示日志被追加到文件结尾，如果是false表示清空文件 -->
+        <!--        <append>true</append>-->
+        <!--        encoder表示对输出格式进行格式化  FileAppender的作用是将日志写到文件中-->
+        <encoder>
+            <!--            输出时间格式-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36}.%M\(%line\) -- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.ceshiren" level="DEBUG" />
+    <logger name="com" level="WARN" />
+    <logger name="ceshiren" level="WARN" />
+    <logger name="org" level="WARN" />
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
