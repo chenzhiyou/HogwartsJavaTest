@@ -82,8 +82,8 @@
                 <version>2.22.2</version>
                 <configuration>
                     <!--设置要执行的标签,除了和这个标签的内容，其他测试用例，全部都不执行-->
-<!--                    <groups>test</groups>-->
-<!--                    <excludedGroups>dev</excludedGroups>-->
+                    <!--                    <groups>test</groups>-->
+                    <!--                    <excludedGroups>dev</excludedGroups>-->
                 </configuration>
             </plugin>
             <plugin>
