@@ -14,6 +14,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@DisplayName("减法运算")
 public class CalculatorSubtractTest extends CalculatorBaseTest{
 
     static Stream<Arguments> ObjectProvider(){
@@ -25,8 +26,7 @@ public class CalculatorSubtractTest extends CalculatorBaseTest{
                 Arguments.arguments(-99, -99, 0)
         );
     }
-    @DisplayName("2个整数相减")
-    @ParameterizedTest
+    @ParameterizedTest(name = "[{index}] {0}+{1}={2}")
     @MethodSource("ObjectProvider")
     void Ca_add_010(int num1, int num2, int num3){
         result = calculator.subtract(num1, num2);
@@ -43,9 +43,8 @@ public class CalculatorSubtractTest extends CalculatorBaseTest{
         );
     }
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "[{index}] {0}+{1}")
     @MethodSource("FailNumber")
-    @DisplayName("无效边界值 ")
     void Ca_add_016(int num1, int num2){
         Exception exception = assertThrows(IllegalArgumentException.class, ()->calculator.subtract(num1,num2));
         String message = exception.getMessage().toString();

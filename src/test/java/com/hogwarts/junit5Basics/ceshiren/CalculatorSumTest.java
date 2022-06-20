@@ -8,13 +8,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static com.hogwarts.junit5Basics.ceshiren.CalculatorBaseTest.calculator;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@DisplayName("加法运算")
 public class CalculatorSumTest extends CalculatorBaseTest{
 
     static Stream<Arguments> ObjectProvider(){
@@ -27,7 +27,7 @@ public class CalculatorSumTest extends CalculatorBaseTest{
     }
 
     @DisplayName("整数相加")
-    @ParameterizedTest
+    @ParameterizedTest(name = "[{index}] {0}+{1}={2}")
     @MethodSource("ObjectProvider")
     void Ca_add_001(int num1, int num2, int num3){
         result = calculator.sum(num1, num2);

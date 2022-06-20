@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("字符串拼接")
 public class CalculatorConcatStrTest extends CalculatorBaseTest{
     @Test
     @DisplayName("字符串拼接")
