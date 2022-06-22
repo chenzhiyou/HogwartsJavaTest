@@ -1,0 +1,4 @@
+allure --help 帮助信息查看
+allure -- version 查看版本信息
+allure serve 生成在线版本的测试
+allure generate <allure-result中间文件> -o 输出目录(默认  allure-report)
