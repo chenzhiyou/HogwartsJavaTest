@@ -12,3 +12,6 @@ junit.jupiter.execution.parallel.mode.classes.default=same_thread
 测试类顺序执行，但是测试方法并行
 junit.jupiter.execution.parallel.mode.default=concurrent
 junit.jupiter.execution.parallel.mode.classes.default=same_thread
+
+配置并发执行策略，参数有dynamic、fixed、custom
+junit.jupiter.execution.parallel.config.strategy
