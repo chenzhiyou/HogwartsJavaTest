@@ -2,3 +2,13 @@ allure --help 帮助信息查看
 allure -- version 查看版本信息
 allure serve 生成在线版本的测试
 allure generate <allure-result中间文件> -o 输出目录(默认  allure-report)
+
+所有测试节点都是并行，测试节点的配置，所有的测试方法都并行
+junit.jupiter.execution.parallel.mode.default=concurrent
+测试类并行，但是测试方法不并行
+junit.jupiter.execution.parallel.mode.classes.default=same_thread
+上面的两个配置可以进行相互的组合
+
+测试类顺序执行，但是测试方法并行
+junit.jupiter.execution.parallel.mode.default=concurrent
+junit.jupiter.execution.parallel.mode.classes.default=same_thread
