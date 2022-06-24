@@ -15,3 +15,4 @@ junit.jupiter.execution.parallel.mode.classes.default=same_thread
 
 配置并发执行策略，参数有dynamic、fixed、custom
 junit.jupiter.execution.parallel.config.strategy
+

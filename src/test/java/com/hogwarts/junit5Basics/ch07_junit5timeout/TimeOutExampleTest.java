@@ -18,13 +18,13 @@ public class TimeOutExampleTest {
     @BeforeEach
 //    @Timeout(3)
     void setup() throws InterruptedException {
-        sleep(4000);
+//        sleep(4000);
         System.out.println("测试开始");
     }
 
     @AfterEach
     void teardown() throws InterruptedException {
-        sleep(4000);
+//        sleep(4000);
         System.out.println("结束开始");
     }
 
@@ -32,7 +32,7 @@ public class TimeOutExampleTest {
     @Timeout(value = 3, unit = SECONDS)
     void timeoutCaseOne() throws InterruptedException {
         System.out.println("第一条用例");
-        sleep(10000);
+//        sleep(10000);
     }
 
     @Test

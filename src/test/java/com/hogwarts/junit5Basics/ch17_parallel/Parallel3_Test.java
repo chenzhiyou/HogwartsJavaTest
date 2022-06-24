@@ -1,7 +1,11 @@
 package com.hogwarts.junit5Basics.ch17_parallel;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
 
+import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
+
+@Execution(CONCURRENT)
 public class Parallel3_Test {
 
     @Test
