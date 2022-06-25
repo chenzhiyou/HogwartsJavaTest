@@ -10,9 +10,9 @@ import java.util.Collection;
 
 import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 
+@Execution(CONCURRENT)
 public class DynamicParallelTest {
     @TestFactory
-    @Execution(CONCURRENT)
     Collection<DynamicTest> parallelTest(){
         DynamicTest dynamicTest1 = DynamicTest.dynamicTest("1st parall", () -> {
             System.out.println(Thread.currentThread().getName() + "*****************1st parall");
