@@ -11,6 +11,10 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <allure.cmd.download.url>
+            https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
+        </allure.cmd.download.url>
+        <allure.version>2.13.5</allure.version>
     </properties>
     <dependencies>
         <dependency>
@@ -91,7 +95,7 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit5</artifactId>
-            <version>2.13.2</version>
+            <version>${allure.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -101,6 +105,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
+                    <properties>
+                        <love>good</love>
+                    </properties>
 
                     <!--设置要执行的标签,除了和这个标签的内容，其他测试用例，全部都不执行-->
                     <!--                    <groups>test</groups>-->
@@ -111,6 +118,15 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.0</version>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                    <allureDownloadUrl>${allure.cmd.download.url}/${allure.version}/allure-commandline-${allure.version}.zip</allureDownloadUrl>
+                </configuration>
             </plugin>
         </plugins>
     </build>

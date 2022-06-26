@@ -51,4 +51,9 @@ public class CalculatorSubtractTest extends CalculatorBaseTest{
         assertThat("失败断言", message, is(containsString("请输入范围内的整数！")));
 
     }
+
+    @Test
+    void test1(){
+        System.out.println(System.getProperty("love"));
+    }
 }
