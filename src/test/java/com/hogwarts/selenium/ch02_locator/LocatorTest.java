@@ -1,4 +1,4 @@
-package com.hogwarts.selenium.ch02_Button;
+package com.hogwarts.selenium.ch02_locator;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
