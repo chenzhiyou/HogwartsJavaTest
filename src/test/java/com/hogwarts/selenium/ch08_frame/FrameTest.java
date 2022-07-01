@@ -36,7 +36,5 @@ public class FrameTest {
         System.out.println(driver.findElement(By.id("draggable")).getText());
         driver.switchTo().parentFrame();
         System.out.println(driver.findElement(By.id("submitBTN")).getText());
-
-
     }
 }
