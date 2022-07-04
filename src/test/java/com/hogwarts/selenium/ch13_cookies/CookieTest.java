@@ -34,7 +34,7 @@ public class CookieTest {
 
     @AfterAll
     public static void afterAll(){
-        driver.quit();
+//        driver.quit();
     }
 
     /**
