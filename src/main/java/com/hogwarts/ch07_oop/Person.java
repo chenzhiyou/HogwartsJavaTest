@@ -1,5 +1,7 @@
 package com.hogwarts.ch07_oop;
 
+import java.util.Objects;
+
 /**
  * Person类
  */
@@ -35,5 +37,18 @@ public class Person {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(height, person.height) && Objects.equals(name, person.name) && Objects.equals(age, person.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(height, name, age);
     }
 }
