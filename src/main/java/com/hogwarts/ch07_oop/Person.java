@@ -27,4 +27,13 @@ public class Person {
     public void meet(String meetPersonName){
         System.out.println(name + "遇见了" + meetPersonName);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "height=" + height +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
