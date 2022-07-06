@@ -21,6 +21,9 @@ import java.util.Collection;
  *          自定义的类没有重写equals方法
  *      boolean containsAll(Collection<?> c) 判断集合是否包含指定集合内的所有对象
  *
+ *      boolean remove(Object o) 从集合中删除对象
+ *      boolean removeAll(Collection<?> c) 从集合中删除集合C集合里的所有对象， 只要有一个元素被remove，返回结果就是true
+ *
  */
 public class CollectionDemo {
     public static void main(String[] args) {
@@ -91,5 +94,24 @@ public class CollectionDemo {
         System.out.println("c1添加C5： "+ add1);
         System.out.println("c1: "+ c1);
 
+        System.out.println("------------------删除-------------");
+        boolean remove = c1.remove(66);
+        System.out.println("删除不存在的元素: "+ remove);
+
+        c1.remove(77);
+        System.out.println("c1: "+ c1);
+        c1.remove(c5);
+        System.out.println("c1: "+ c1);
+
+        Collection collection = new ArrayList();
+        collection.add(new Person("小7", 178, 22));
+        System.out.println("collection: "+ collection);
+        remove = c1.remove(collection);
+        System.out.println("c1: "+ c1);
+        c1.remove(new Person("小7", 178, 22));
+        System.out.println("c1: "+ c1);
+        System.out.println("---------------removeAll------------");
+        boolean b4 = c1.removeAll(collection);
+        System.out.println(b4);
     }
 }
