@@ -113,5 +113,14 @@ public class CollectionDemo {
         System.out.println("---------------removeAll------------");
         boolean b4 = c1.removeAll(collection);
         System.out.println(b4);
+
+        System.out.println("---------------------");
+        System.out.println("C1集合的长度"+ c1.size());
+        // 判断集合是否为空
+        System.out.println(0== c1.size()? "这是一个空集合":"集合还没有空");
+        System.out.println(c1.isEmpty()? "这是一个空集合":"集合还没有空");
+        c1.clear();
+        System.out.println(0== c1.size()? "这是一个空集合":"集合还没有空");
+        System.out.println(c1.isEmpty()? "这是一个空集合":"集合还没有空");
     }
 }
