@@ -11,8 +11,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.WebElement;
 
-
-import javax.swing.plaf.PanelUI;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
