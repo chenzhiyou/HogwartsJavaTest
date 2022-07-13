@@ -7,12 +7,38 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+/**
+ * Capability简介
+ *      功能：配置appium会话，告诉appium服务器需要自动化的平台的应用程序
+ *      形式：键值对的集合，键对应设置的名称，值对应设置的值
+ *      主要分为三部分：
+ *          公共部分
+ *              platformName 使用的手机操作系统
+ *              platformVersion  手机操作系统的版本
+ *              deviceName 使用的手机或模拟器类型
+ *              automationName 使用哪个自动化引擎
+ *              noReset 在当前session下不会重置应用的状态，默认值为false
+ *          iOS部分
+ *              bundleId
+ *              udid
+ *          Android部分
+ *              appActivity 启动页
+ *              appPackage 运营的Android应用的包名
+ *              appWaitActivity 用于等待启动的Android activity名称
+ *              unicodeKeyboard 启动Unicode输入，默认为false
+ *              resetKeyboard
+ *              dontStopAppOnReset  收起启动的时候，不停止APP
+ *              skipDeviceInitialization 跳过安装，权限设置等操作
+ *     session：appium的客户端和服务端之间进行通信的前提，通过Desired Capabilities建立会话
+ */
 public class RecordDemo {
     private AndroidDriver driver;
 
@@ -26,6 +52,10 @@ public class RecordDemo {
         desiredCapabilities.setCapability("appPackage", "com.didiglobal.express.driver");
         // 进行参数优化，保留历史数据
         desiredCapabilities.setCapability("noReset", true);
+        // ensureWebViresHavePage webview配置
+        desiredCapabilities.setCapability(AndroidMobileCapabilityType.ENSURE_WEBVIEWS_HAVE_PAGES, true);
+        // 设置超时时间
+        desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 3600);
 
         URL remoteUrl = new URL("http://localhost:4723/wd/hub");
 
