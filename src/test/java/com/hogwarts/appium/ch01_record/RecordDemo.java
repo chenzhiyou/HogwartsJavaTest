@@ -15,6 +15,8 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static io.appium.java_client.MobileCommand.LAUNCH_APP;
+
 /**
  * Capability简介
  *      功能：配置appium会话，告诉appium服务器需要自动化的平台的应用程序
@@ -76,6 +78,8 @@ public class RecordDemo {
         el4.click();
         WebElement el5 = (WebElement) driver.findElement(AppiumBy.id("com.didiglobal.express.driver:id/custom_btn_text"));
         el5.click();
+        // 热启动
+        driver.execute(LAUNCH_APP);
         // 使用系统的返回按钮
         driver.navigate().back();
     }
