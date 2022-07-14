@@ -10,6 +10,7 @@ import java.time.Duration;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -41,6 +42,12 @@ public class WaitDemo {
         WebElement searchEle = driver.findElement(AppiumBy.id("com.xueqiu.android:id/home_search"));
         searchEle.click();
         WebElement element = driver.findElement(AppiumBy.id("com.xueqiu.android:id/search_input_text"));
+        System.out.println(element.getText());
+        // 获取一些元素的相关属性
+        boolean displayed = element.isDisplayed();
+        System.out.println("元素是否可见: "+ displayed);
+        String attribute = element.getAttribute("resource-id");
+        System.out.println("resource-id： "+ attribute);
         element.clear();
         element.sendKeys("alibaba");
         System.out.println("-----------hhhh------------------");
@@ -48,7 +55,18 @@ public class WaitDemo {
 //        WebElement element1 = new WebDriverWait(driver, Duration.ofSeconds(3))
 //                .until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.xueqiu.android:id/home_search")));
 
-
+        /**
+         * 元素中心点
+         * startX + 宽度/2
+         * startY + 高度/2
+         */
+        int startX = element.getLocation().getX();
+        int startY = element.getLocation().getY();
+        Dimension size = element.getSize();
+        int midd = size.getWidth()/2;
+        int middH = size.getHeight()/2;
+        int middleX = startX+ midd;
+        int middleY = startY+ middH;
     }
 
     @AfterAll
