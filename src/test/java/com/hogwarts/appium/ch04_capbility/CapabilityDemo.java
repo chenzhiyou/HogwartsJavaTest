@@ -1,12 +1,10 @@
-package com.hogwarts.appium.ch03_wait;
+package com.hogwarts.appium.ch04_capbility;
 
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.AppiumBy;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.Duration;
-
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.options.app.SupportsAutoGrantPermissionsOption;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -15,11 +13,36 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class WaitDemo {
-
+/**
+ * deviceName 设备名称 不能唯一锁定一个设备
+ * uid： 有多个设备的时候，要指定UID， 默认读取设备列表的第一个设备，设备列表： adb devices
+ * newCommandTimeout appium程序应等待来自客户端的新命令多长时间，超时后会话删除，默认为60秒，设置为0禁用
+ * PRINT_PAGE_SOURCE_ON_FIND_FAILURE 默认为false，发生任何错误，强制服务器将实际的XML页面源转储到日志中
+ * autoGrantPermissions 授予APP启动的应用程序的某些权限，当noReset设置为true的时候，此参数不生效
+ * 测试策略：
+ *      noReset
+ *          默认为false
+ *          安卓true：
+ *              不停止应用程序
+ *              不清楚应用程序数据
+ *              不卸载apk
+ *      fullRest
+ *          默认为false，true：新会话之前完全卸载被测应用程序
+ *          安卓：
+ *              在会话开始之前(appium启动APP)和测试之后停止应用程序
+ *              清除应用程序数据并卸载apk
+ *      dontStopAppOnReset:
+ *          默认为false
+ *          不希望应用程序在运行时重新启动，设置为true
+ *
+ */
+public class CapabilityDemo {
     public static AndroidDriver driver;
 
     @BeforeAll
@@ -32,6 +55,12 @@ public class WaitDemo {
         desiredCapabilities.setCapability("appActivity", ".view.WelcomeActivityAlias");
         desiredCapabilities.setCapability("autoGrantpermission", "true");
         desiredCapabilities.setCapability("noReset", true);
+        // 设置会话的超时时间
+        desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
+        // 授予APP启动的应用程序的某些权限
+        desiredCapabilities.setCapability(SupportsAutoGrantPermissionsOption.AUTO_GRANT_PERMISSIONS_OPTION, 30);
+        desiredCapabilities.setCapability(MobileCapabilityType.PRINT_PAGE_SOURCE_ON_FIND_FAILURE, true);
+        desiredCapabilities.setCapability(AndroidMobileCapabilityType.DONT_STOP_APP_ON_RESET, true);
 
         URL remoteUrl = new URL("http://localhost:4723/wd/hub");
 
@@ -97,4 +126,5 @@ public class WaitDemo {
     static void tearDown() {
         driver.quit();
     }
+
 }
