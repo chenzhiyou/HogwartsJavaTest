@@ -2,6 +2,7 @@ package com.hogwarts.appium.ch03_wait;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -10,14 +11,20 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
 import java.util.function.Function;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.slf4j.LoggerFactory.getLogger;
 
 /**
  * 显示等待：
@@ -58,6 +65,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  */
 public class WebDriverWaitTest {
     public static AndroidDriver driver;
+    public static final Logger logger = getLogger(WebDriverWaitTest.class);
 
     @BeforeAll
     static void setUp() throws MalformedURLException {
@@ -78,6 +86,7 @@ public class WebDriverWaitTest {
 
     @Test
     public void sampleTest() {
+        logger.info("APP启动成功");
         WebElement searchEle = driver.findElement(AppiumBy.id("com.xueqiu.android:id/home_search"));
         boolean enabled = searchEle.isEnabled();
         System.out.println("当前搜索框是否可用： "+ enabled);
@@ -136,6 +145,20 @@ public class WebDriverWaitTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        /**
+         * 截图
+         */
+        long nowTime = System.currentTimeMillis();
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        Path jpgPath = Paths.get("jpg", nowTime+".jpg");
+        File file = jpgPath.toFile();
+        try {
+            FileUtils.copyFile(screenshot,file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // 获取页面源码
+        logger.info(driver.getPageSource());
     }
 
     /**
