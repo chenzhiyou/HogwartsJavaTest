@@ -15,12 +15,14 @@ public class ContactPage extends BasePage{
     public AddContactMethodPage goToChooseContactMethodPage(){
         // 点击添加成员
         driver.findElement(AppiumBy.xpath("//*[@text='添加成员']")).click();
+//        driver.findElement(AppiumBy.cssSelector("[text='添加成员']")).click();
         return new AddContactMethodPage(driver);
     }
 
     public SearchPage goToSearchPage(){
         // 点击搜索按钮
         driver.findElement(AppiumBy.id("com.tencent.wework:id/l00")).click();
+//        driver.findElement(AppiumBy.cssSelector("#com\\.tencent\\.wework\\:id\\/l00")).click();
         return new SearchPage(driver);
     }
 }

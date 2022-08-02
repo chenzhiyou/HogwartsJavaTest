@@ -53,8 +53,9 @@ public class WeWorkMainPage extends BasePage{
     }
 
     public ContactPage switchToContactPage(){
-        // 点击通讯录
+        // 点击通讯录, 修改定位方式为css定位
         driver.findElement(AppiumBy.xpath("//*[@text='通讯录']")).click();
+//        driver.findElement(AppiumBy.cssSelector("[text='通讯录']")).click();
         return new ContactPage(driver);
     }
 }
