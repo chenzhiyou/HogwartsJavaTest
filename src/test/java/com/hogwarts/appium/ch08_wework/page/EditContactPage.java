@@ -12,9 +12,11 @@ public class EditContactPage extends BasePage{
     }
 
     public void addMember(String name, String phone){
+        // 联系人名称
         WebElement nameElement = driver.findElement(AppiumBy.id("com.tencent.wework:id/bwp"));
         nameElement.clear();
         nameElement.sendKeys(name);
+        // 联系人手机号
         WebElement phoneElement = driver.findElement(AppiumBy.id("com.tencent.wework:id/hyw"));
         phoneElement.clear();
         phoneElement.sendKeys(phone);

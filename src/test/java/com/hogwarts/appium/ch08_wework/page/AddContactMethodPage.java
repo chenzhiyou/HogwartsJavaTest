@@ -13,6 +13,7 @@ public class AddContactMethodPage extends BasePage{
 
     // 切换到添加成员界面
     public EditContactPage goToEditContactPage(){
+        // 选择手动输入添加
         driver.findElement(AppiumBy.id("com.tencent.wework:id/dvu")).click();
         return new EditContactPage(driver);
     }

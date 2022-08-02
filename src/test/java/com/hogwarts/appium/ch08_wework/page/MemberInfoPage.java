@@ -14,6 +14,7 @@ public class MemberInfoPage extends BasePage{
     }
 
     public String getMemberName(){
+        // 获取联系人名称
         String name = driver.findElement(AppiumBy.xpath("//*[@text='小江山']")).getText();
         System.out.println(name);
         return name;

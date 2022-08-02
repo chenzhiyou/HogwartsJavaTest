@@ -14,6 +14,7 @@ public class SearchPage extends BasePage {
 
     // 搜索
     public SearchResultPage searchMember(){
+        // 点击搜索框清空内容后输入要搜索内容
         WebElement searchElement = driver.findElement(AppiumBy.xpath("//*[@text='搜索']"));
         searchElement.clear();
         searchElement.sendKeys("小江山");

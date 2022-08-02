@@ -13,11 +13,13 @@ public class ContactPage extends BasePage{
 
     // 切换到选择添加方式界面
     public AddContactMethodPage goToChooseContactMethodPage(){
+        // 点击添加成员
         driver.findElement(AppiumBy.xpath("//*[@text='添加成员']")).click();
         return new AddContactMethodPage(driver);
     }
 
     public SearchPage goToSearchPage(){
+        // 点击搜索按钮
         driver.findElement(AppiumBy.id("com.tencent.wework:id/l00")).click();
         return new SearchPage(driver);
     }

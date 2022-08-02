@@ -45,6 +45,7 @@ public class WeWorkMainPage extends BasePage{
             }
 
             driver = new AndroidDriver(remoteUrl, desiredCapabilities);
+            // 添加隐式等待，最长不超过30
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
 
         }
@@ -52,6 +53,7 @@ public class WeWorkMainPage extends BasePage{
     }
 
     public ContactPage switchToContactPage(){
+        // 点击通讯录
         driver.findElement(AppiumBy.xpath("//*[@text='通讯录']")).click();
         return new ContactPage(driver);
     }
