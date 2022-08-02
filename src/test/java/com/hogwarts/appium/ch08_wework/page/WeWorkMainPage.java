@@ -1,0 +1,58 @@
+package com.hogwarts.appium.ch08_wework.page;
+
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.options.app.SupportsAutoGrantPermissionsOption;
+import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+
+public class WeWorkMainPage extends BasePage{
+    public WeWorkMainPage(AndroidDriver driver) {
+        super(driver);
+    }
+
+    public WeWorkMainPage() {
+        if (driver==null){
+            startApp();
+        }
+    }
+
+    public WeWorkMainPage startApp(){
+        if (driver==null){
+            DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+            desiredCapabilities.setCapability("platformName", "Android");
+            desiredCapabilities.setCapability("deviceName", "ab5e4675");
+            desiredCapabilities.setCapability("platformVersion", "10.0");
+            desiredCapabilities.setCapability("appPackage", "com.tencent.wework");
+            desiredCapabilities.setCapability("appActivity", ".launch.LaunchSplashActivity");
+            desiredCapabilities.setCapability("autoGrantpermission", "true");
+            desiredCapabilities.setCapability("noReset", true);
+            // 当页面出错时，获取页面的page_source
+            desiredCapabilities.setCapability(MobileCapabilityType.PRINT_PAGE_SOURCE_ON_FIND_FAILURE, true);
+            desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300000);
+            // Android设备需要的初始化权限全部开通
+            desiredCapabilities.setCapability(SupportsAutoGrantPermissionsOption.AUTO_GRANT_PERMISSIONS_OPTION, true);
+
+            URL remoteUrl = null;
+            try {
+                remoteUrl = new URL("http://localhost:4723/wd/hub");
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+
+            driver = new AndroidDriver(remoteUrl, desiredCapabilities);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+
+        }
+        return this;
+    }
+
+    public ContactPage switchToContactPage(){
+        driver.findElement(AppiumBy.xpath("//*[@text='通讯录']")).click();
+        return new ContactPage(driver);
+    }
+}
