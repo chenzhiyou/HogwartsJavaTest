@@ -11,7 +11,7 @@ public class EditContactPage extends BasePage{
         super(driver);
     }
 
-    public void addMember(String name, String phone){
+    public AddContactMethodPage addMember(String name, String phone){
         // 联系人名称
         WebElement nameElement = driver.findElement(AppiumBy.id("com.tencent.wework:id/bwp"));
         nameElement.clear();
@@ -22,6 +22,6 @@ public class EditContactPage extends BasePage{
         phoneElement.sendKeys(phone);
         WebElement saveElement = driver.findElement(AppiumBy.xpath("//*[@text='保存']"));
         saveElement.click();
-//        return new AddContactMethodPage(driver);
+        return new AddContactMethodPage(driver);
     }
 }
