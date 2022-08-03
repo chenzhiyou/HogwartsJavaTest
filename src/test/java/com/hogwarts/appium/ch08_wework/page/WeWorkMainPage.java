@@ -3,6 +3,7 @@ package com.hogwarts.appium.ch08_wework.page;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.app.SupportsAutoGrantPermissionsOption;
+import io.appium.java_client.ios.options.wda.SupportsWaitForIdleTimeoutOption;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -36,6 +37,7 @@ public class WeWorkMainPage extends BasePage{
             desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300000);
             // Android设备需要的初始化权限全部开通
             desiredCapabilities.setCapability(SupportsAutoGrantPermissionsOption.AUTO_GRANT_PERMISSIONS_OPTION, true);
+            desiredCapabilities.setCapability(SupportsWaitForIdleTimeoutOption.WAIT_FOR_IDLE_TIMEOUT_OPTION, 0);
 
             URL remoteUrl = null;
             try {
@@ -57,5 +59,11 @@ public class WeWorkMainPage extends BasePage{
         driver.findElement(AppiumBy.xpath("//*[@text='通讯录']")).click();
 //        driver.findElement(AppiumBy.cssSelector("[text='通讯录']")).click();
         return new ContactPage(driver);
+    }
+
+    public WorkPage switchToWorkPage(){
+        // 点击工作台，进入到工作台界面
+        driver.findElement(AppiumBy.xpath("//*[@text='工作台']")).click();
+        return new WorkPage(driver);
     }
 }

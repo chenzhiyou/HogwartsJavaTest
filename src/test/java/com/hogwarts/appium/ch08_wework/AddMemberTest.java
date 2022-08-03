@@ -43,5 +43,11 @@ public class AddMemberTest {
         System.out.println(name);
     }
 
+    @Test
+    public void ClockInTest() throws InterruptedException {
+        weWork.switchToWorkPage()
+                .goToClockInPage()
+                .Clock();
+    }
 
 }
