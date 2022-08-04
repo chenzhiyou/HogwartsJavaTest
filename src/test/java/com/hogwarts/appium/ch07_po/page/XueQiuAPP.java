@@ -57,6 +57,10 @@ public class XueQiuAPP extends BasePage {
         return new SearchPage(driver);
     }
 
+    public void back(){
+        find(AppiumBy.cssSelector("#com\\.xueqiu\\.android\\:id\\/action_close")).click();
+    }
+
     public void quite(){
         driver.quit();
     }

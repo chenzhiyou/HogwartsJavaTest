@@ -1,19 +1,23 @@
 package com.hogwarts.appium.ch07_po;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.hogwarts.appium.ch07_po.entity.SearchDto;
+import com.hogwarts.appium.ch07_po.entity.SearchListDto;
 import com.hogwarts.appium.ch07_po.page.XueQiuAPP;
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.AndroidDriver;
+import io.qameta.allure.Description;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.Duration;
+import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.closeTo;
@@ -35,18 +39,45 @@ public class POTest {
         xueQiuAPP = new XueQiuAPP().startApp();
     }
 
-    @Test
-    public void searchTest(){
+    @ParameterizedTest
+    @MethodSource
+    @DisplayName("search xueqiu")
+    @Description("测试用例： 雪球搜索阿里巴巴股票价格")
+    public void searchTest(SearchDto searchDto){
         String price = xueQiuAPP // 启动雪球APP
                 .toSearchPage() // 点击搜索跳转到搜索页面
-                .toSearchResultPage()// 搜索页面输入内容，跳转到搜索结果页面
+                .toSearchResultPage(searchDto.getText())// 搜索页面输入内容，跳转到搜索结果页面
                 .getPrice(); // 获取当前股票的金额
         Double priceDouble = Double.valueOf(price);
-        assertThat(priceDouble,is(closeTo(110*(1-0.1), 110*(1+0.1))));
+        assertThat(priceDouble,is(closeTo(searchDto.getPriceEnd()*(1-0.1), searchDto.getPriceEnd()*(1+0.1))));
+
+    }
+    static List<SearchDto> searchTest(){
+        List<SearchDto> datas = getSearchYaml().getDatas();
+        return datas;
+    }
+
+    @AfterEach
+    public void afterEach(){
+        xueQiuAPP.back();
     }
 
     @AfterAll
     public static void after(){
         xueQiuAPP.quite();
+    }
+
+    // 读取yaml文件
+    private static SearchListDto getSearchYaml(){
+        SearchListDto searchListDto;
+        ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
+        // 需要解析成的类
+        TypeReference<SearchListDto> typeReference = new TypeReference<SearchListDto>(){};
+        try {
+            searchListDto = objectMapper.readValue(Paths.get("src/test/resources/data/seaarch.yaml").toFile(), typeReference);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return searchListDto;
     }
 }

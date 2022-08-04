@@ -13,14 +13,16 @@ public class SearchPage extends XueQiuAPP{
     }
 
     // 搜索结果操作到搜索结果界面
-    public SearchResultPage toSearchResultPage(){
+    public SearchResultPage toSearchResultPage(String text){
         // 1、输入alibaba
         WebElement searchElement = find(AppiumBy.id("com.xueqiu.android:id/search_input_text"));
         searchElement.clear();
-        searchElement.sendKeys("alibaba");
+        searchElement.sendKeys(text);
         searchElement.click();
         // 2、点击第一个搜索结果，跳转到搜索结果界面
-        find(AppiumBy.id("com.xueqiu.android:id/listview")).click();
+        String elemeentText = "//*[@text='"+text+"']";
+        driver.findElements(AppiumBy.xpath(elemeentText)).get(1).click();
+//        find(AppiumBy.id("com.xueqiu.android:id/listview")).click();
         return new SearchResultPage(driver);
     }
 }
