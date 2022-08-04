@@ -36,7 +36,7 @@ public class POTest {
     }
 
     @Test
-    public void search(){
+    public void searchTest(){
         String price = xueQiuAPP // 启动雪球APP
                 .toSearchPage() // 点击搜索跳转到搜索页面
                 .toSearchResultPage()// 搜索页面输入内容，跳转到搜索结果页面
