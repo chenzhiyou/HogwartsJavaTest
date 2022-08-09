@@ -19,4 +19,10 @@ public class MemberInfoPage extends BasePage{
         System.out.println(name);
         return name;
     }
+
+    // 点击个人信息界面右上角的三个点按钮，进入到个人信息编辑界面
+    public MemberInfoEditPage goToMemberInfoEditPage(){
+        driver.findElement(AppiumBy.id("com.tencent.wework:id/kzp")).click();
+        return new MemberInfoEditPage(driver);
+    }
 }

@@ -6,6 +6,7 @@ import io.appium.java_client.android.options.app.SupportsAutoGrantPermissionsOpt
 import io.appium.java_client.ios.options.wda.SupportsWaitForIdleTimeoutOption;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -49,6 +50,8 @@ public class WeWorkMainPage extends BasePage{
             driver = new AndroidDriver(remoteUrl, desiredCapabilities);
             // 添加隐式等待，最长不超过30
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+            // 声明显示等待
+            webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(15), Duration.ofSeconds(2));
 
         }
         return this;

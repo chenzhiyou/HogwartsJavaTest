@@ -7,9 +7,12 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.closeTo;
 import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * 打造测试框架的需求与价值：
@@ -61,6 +64,20 @@ public class AddMemberTest {
                 .goToResult()
                 .getMemberName();
         System.out.println(name);
+    }
+
+    @Test
+    public void deleteMemberTest(){
+        List<String> searchList = weWork
+                .switchToContactPage()
+                .goToSearchPage()
+                .searchMember()
+                .goToResult()
+                .goToMemberInfoEditPage()
+                .editMember()
+                .deleteMember()
+                .noResult();
+        assertTrue(searchList.contains("无搜索结果"));
     }
 
     @Test

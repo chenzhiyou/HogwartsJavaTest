@@ -21,38 +21,9 @@ public class WorkPage extends BasePage{
     public ClockInPage goToClockInPage() throws InterruptedException {
         // 进行滑动，展示出打卡按钮
         /**
-         * 滑动的起始坐标
+         * 使用封装后的滑动代码
          */
-        Dimension dimension = driver.manage().window().getSize();
-        Point startPoint = new Point((int) (dimension.width * 0.5), (int) (dimension.height * 0.9));
-        Point endPoint = new Point((int) (dimension.width * 0.5), (int) (dimension.height * 0.3));
-
-        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
-        Sequence sequence =new Sequence(finger, 1)
-                .addAction(
-                        finger.createPointerMove(
-                                Duration.ofMillis(0),
-                                PointerInput.Origin.viewport(),
-                                startPoint.getX(), startPoint.getY()
-                        )
-                )
-                .addAction(
-                        finger.createPointerDown(
-                                LEFT.asArg()
-                        )
-                )
-                .addAction(
-                        finger.createPointerMove(
-                                Duration.ofMillis(1),
-                                PointerInput.Origin.viewport(),
-                                endPoint.getX(), endPoint.getY()
-                        )
-                )
-                .addAction(finger.createPointerUp(
-                        LEFT.asArg()
-                ));
-        driver.perform(Arrays.asList(sequence));
-        sleep(500);
+       swipeUp();
         // 点击打卡按钮
         driver.findElement(AppiumBy.xpath("//*[@text='打卡']")).click();
         return new ClockInPage(driver);
