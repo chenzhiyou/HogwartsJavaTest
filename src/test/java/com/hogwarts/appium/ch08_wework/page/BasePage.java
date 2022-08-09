@@ -17,7 +17,7 @@ import static org.openqa.selenium.interactions.PointerInput.MouseButton.LEFT;
 
 public class BasePage {
     public AndroidDriver driver;
-    public WebDriverWait webDriverWait;
+
 
     public BasePage(){
 

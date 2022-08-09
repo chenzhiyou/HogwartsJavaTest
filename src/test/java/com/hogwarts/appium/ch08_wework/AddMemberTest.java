@@ -60,7 +60,7 @@ public class AddMemberTest {
         String name = weWork
                 .switchToContactPage()
                 .goToSearchPage()
-                .searchMember()
+                .searchMember(memberName)
                 .goToResult()
                 .getMemberName();
         System.out.println(name);
@@ -68,15 +68,23 @@ public class AddMemberTest {
 
     @Test
     public void deleteMemberTest(){
+        weWork
+                .switchToContactPage()// 切换到通讯录界面
+                .goToChooseContactMethodPage() // 点击添加成员进入到选择添加方式界面
+                .goToEditContactPage()
+                .addMember(memberName, memberPhone)
+                .backToContactPage();
+
         List<String> searchList = weWork
                 .switchToContactPage()
                 .goToSearchPage()
-                .searchMember()
+                .searchMember(memberName)
                 .goToResult()
                 .goToMemberInfoEditPage()
                 .editMember()
                 .deleteMember()
                 .noResult();
+        System.out.println(searchList);
         assertTrue(searchList.contains("无搜索结果"));
     }
 

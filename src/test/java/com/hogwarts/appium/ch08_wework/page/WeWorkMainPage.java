@@ -17,6 +17,7 @@ public class WeWorkMainPage extends BasePage{
         super(driver);
     }
 
+
     public WeWorkMainPage() {
         if (driver==null){
             startApp();
@@ -51,7 +52,6 @@ public class WeWorkMainPage extends BasePage{
             // 添加隐式等待，最长不超过30
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
             // 声明显示等待
-            webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(15), Duration.ofSeconds(2));
 
         }
         return this;

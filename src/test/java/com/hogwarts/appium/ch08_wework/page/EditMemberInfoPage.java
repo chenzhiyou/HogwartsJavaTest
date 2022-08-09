@@ -3,7 +3,10 @@ package com.hogwarts.appium.ch08_wework.page;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,10 +30,12 @@ public class EditMemberInfoPage extends BasePage{
 //                textList.contains("删除成员")
 //        );
         // 使用Android原生定位
-        String deleteString = "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text('删除成功'))";
-        driver.findElement(AppiumBy.androidUIAutomator(deleteString)).click();
-        webDriverWait.until(webDriver-> webDriver.getPageSource().contains("邮件暂存30天"));
-        driver.findElement(AppiumBy.xpath("//*[@text='确定']")).click();
+//        String deleteString = "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text('删除成员'))";
+        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"删除成员\"))")).click();
+        WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(15), Duration.ofSeconds(2));
+
+        WebElement webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(AppiumBy.id("com.tencent.wework:id/cjg")));
+        webElement.click();
         return new SearchResultPage(driver);
     }
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.Thread.sleep;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
@@ -25,6 +26,11 @@ public class SearchResultPage extends BasePage{
 
     public List<String> noResult(){
         List<String> searchList = new ArrayList<>();
+        try {
+            sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         List<WebElement> elements = driver.findElements(AppiumBy.className("android.widget.TextView"));
         elements.forEach(webElement -> searchList.add(webElement.getText()));
 //        assertTrue(searchList.contains("无搜索结果"));
