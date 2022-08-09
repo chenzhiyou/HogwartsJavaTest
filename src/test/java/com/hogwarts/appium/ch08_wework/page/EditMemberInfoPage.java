@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,7 @@ public class EditMemberInfoPage extends BasePage{
     }
 
     // 删除成员，删除成功户返回到搜索结果界面
-    public SearchResultPage deleteMember(){
+    public SearchResultPage deleteMember() throws IOException {
         // 滑动到底查找删除成员
         List<String> textList = new ArrayList<>();
 //        do {
@@ -35,6 +36,7 @@ public class EditMemberInfoPage extends BasePage{
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(15), Duration.ofSeconds(2));
 
         WebElement webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(AppiumBy.id("com.tencent.wework:id/cjg")));
+        ElementScreenBase(webElement);
         webElement.click();
         return new SearchResultPage(driver);
     }

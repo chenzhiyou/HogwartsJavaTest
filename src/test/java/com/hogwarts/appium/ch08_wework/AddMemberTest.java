@@ -3,10 +3,14 @@ package com.hogwarts.appium.ch08_wework;
 import com.hogwarts.appium.ch07_po.page.XueQiuAPP;
 import com.hogwarts.appium.ch08_wework.page.WeWorkMainPage;
 import com.util.FakerUtil;
+import org.apache.commons.exec.CommandLine;
+import org.apache.commons.exec.DefaultExecuteResultHandler;
+import org.apache.commons.exec.DefaultExecutor;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -41,7 +45,20 @@ public class AddMemberTest {
 
     @BeforeAll
     public static void Before(){
-
+//        CommandLine commandLine = new CommandLine("appium");
+//        commandLine.addArgument("-g");
+//        commandLine.addArgument("0000.log");
+//        commandLine.addArgument("--port");
+//        commandLine.addArgument("4723");
+//
+//        DefaultExecuteResultHandler handler = new DefaultExecuteResultHandler();
+//        DefaultExecutor executor = new DefaultExecutor();
+//        executor.setExitValue(1);
+//        try {
+//            executor.execute(commandLine, handler);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         weWork = new WeWorkMainPage().startApp();
     }
 
@@ -67,7 +84,7 @@ public class AddMemberTest {
     }
 
     @Test
-    public void deleteMemberTest(){
+    public void deleteMemberTest() throws IOException {
         weWork
                 .switchToContactPage()// 切换到通讯录界面
                 .goToChooseContactMethodPage() // 点击添加成员进入到选择添加方式界面
