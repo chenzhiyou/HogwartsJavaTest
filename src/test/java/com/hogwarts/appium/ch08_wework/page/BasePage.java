@@ -2,6 +2,7 @@ package com.hogwarts.appium.ch08_wework.page;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.Dimension;
@@ -36,10 +37,11 @@ public class BasePage {
         this.driver = driver;
     }
 
+    @Step("元素查找")
     public WebElement find(By by){
         WebElement element = driver.findElement(by);
         try {
-            ElementScreenBase(element);
+            ElementScreenBase(element, by.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -69,7 +71,7 @@ public class BasePage {
      * @param element
      * @return
      */
-    public void ElementScreenBase(WebElement element) throws IOException {
+    public void ElementScreenBase(WebElement element, String messgae) throws IOException {
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         org.openqa.selenium.Point elementLocation = element.getLocation();
         org.openqa.selenium.Dimension elementSize = element.getSize();
@@ -89,7 +91,9 @@ public class BasePage {
         graph.setColor(Color.RED);//绘制形状的颜色
         graph.drawRect(eleX, eleY, eleW, eleH);//绘制指定矩形的轮廓
         graph.dispose();//处理此图形上下文并释放它正在使用的任何系统资源
-        ImageIO.write(img, "png", getPngPath().toFile());
+        Path pngPath = getPngPath();
+        ImageIO.write(img, "png", pngPath.toFile());
+        Allure.addAttachment(messgae,"image/png", new FileInputStream(pngPath.toFile()),".png");
     }
 
     public Path getPngPath() {

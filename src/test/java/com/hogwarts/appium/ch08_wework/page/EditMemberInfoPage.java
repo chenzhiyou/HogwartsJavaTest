@@ -36,7 +36,7 @@ public class EditMemberInfoPage extends BasePage{
         WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(15), Duration.ofSeconds(2));
 
         WebElement webElement = webDriverWait.until(ExpectedConditions.elementToBeClickable(AppiumBy.id("com.tencent.wework:id/cjg")));
-        ElementScreenBase(webElement);
+//        ElementScreenBase(webElement);
         webElement.click();
         return new SearchResultPage(driver);
     }
