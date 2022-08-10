@@ -66,7 +66,7 @@ public class WeWorkMainPage extends BasePage{
 
     public WorkPage switchToWorkPage(){
         // 点击工作台，进入到工作台界面
-        driver.findElement(AppiumBy.xpath("//*[@text='工作台']")).click();
+        find(AppiumBy.xpath("//*[@text='工作台']")).click();
         return new WorkPage(driver);
     }
 }

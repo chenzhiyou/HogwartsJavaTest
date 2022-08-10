@@ -13,14 +13,14 @@ public class EditContactPage extends BasePage{
 
     public AddContactMethodPage addMember(String name, String phone){
         // 联系人名称
-        WebElement nameElement = driver.findElement(AppiumBy.id("com.tencent.wework:id/bwp"));
+        WebElement nameElement = find(AppiumBy.id("com.tencent.wework:id/bwp"));
         nameElement.clear();
         nameElement.sendKeys(name);
         // 联系人手机号
-        WebElement phoneElement = driver.findElement(AppiumBy.id("com.tencent.wework:id/hyw"));
+        WebElement phoneElement = find(AppiumBy.id("com.tencent.wework:id/hyw"));
         phoneElement.clear();
         phoneElement.sendKeys(phone);
-        WebElement saveElement = driver.findElement(AppiumBy.xpath("//*[@text='保存']"));
+        WebElement saveElement = find(AppiumBy.xpath("//*[@text='保存']"));
         saveElement.click();
         return new AddContactMethodPage(driver);
     }

@@ -23,7 +23,6 @@ public class WorkPage extends BasePage{
         /**
          * 使用封装后的滑动代码
          */
-       swipeUp();
         // 点击打卡按钮
         driver.findElement(AppiumBy.xpath("//*[@text='打卡']")).click();
         return new ClockInPage(driver);

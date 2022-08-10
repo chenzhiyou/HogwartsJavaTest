@@ -9,7 +9,7 @@ public class MemberInfoEditPage extends BasePage{
     }
 
     public EditMemberInfoPage editMember(){
-        driver.findElement(AppiumBy.xpath("//*[@text='编辑成员']")).click();
+        find(AppiumBy.xpath("//*[@text='编辑成员']")).click();
         return new EditMemberInfoPage(driver);
     }
 }

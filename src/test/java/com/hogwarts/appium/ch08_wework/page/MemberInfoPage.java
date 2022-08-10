@@ -15,14 +15,14 @@ public class MemberInfoPage extends BasePage{
 
     public String getMemberName(){
         // 获取联系人名称
-        String name = driver.findElement(AppiumBy.xpath("//*[@text='小江山']")).getText();
+        String name = find(AppiumBy.xpath("//*[@text='小江山']")).getText();
         System.out.println(name);
         return name;
     }
 
     // 点击个人信息界面右上角的三个点按钮，进入到个人信息编辑界面
     public MemberInfoEditPage goToMemberInfoEditPage(){
-        driver.findElement(AppiumBy.id("com.tencent.wework:id/kzp")).click();
+        find(AppiumBy.id("com.tencent.wework:id/kzp")).click();
         return new MemberInfoEditPage(driver);
     }
 }

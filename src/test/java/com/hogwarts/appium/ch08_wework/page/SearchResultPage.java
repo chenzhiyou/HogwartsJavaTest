@@ -20,7 +20,7 @@ public class SearchResultPage extends BasePage{
 
     public MemberInfoPage goToResult(){
         // 点击搜索结果
-        driver.findElement(AppiumBy.id("com.tencent.wework:id/f2j")).click();
+        find(AppiumBy.id("com.tencent.wework:id/f2j")).click();
         return new MemberInfoPage(driver);
     }
 
