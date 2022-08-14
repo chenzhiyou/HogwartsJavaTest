@@ -4,3 +4,17 @@ REST-assured:
     支持xpath/jsonpath/gpath解析方式
     对Spring的支持比较全面
     符合契约编程思想
+语法格式：
+    given()：可以设置测试预设
+        param():URL查询参数
+    when(): 所要执行的操作
+        get():GET请求
+        post():POST请求
+    then(): 可以解析结果、断言
+        statusCode: 响应状态码断言
+    请求参数：
+        直接拼接在URL中
+        GET请求：param(): 查询参数
+        POST请求：
+            queryParam(): 查询参数
+            formParam(): 表单参数
