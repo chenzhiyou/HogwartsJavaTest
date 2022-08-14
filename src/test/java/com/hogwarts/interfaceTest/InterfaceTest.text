@@ -1,0 +1,6 @@
+REST-assured:
+    简约的接口测试DSL
+    支持xml/json的结构化解析
+    支持xpath/jsonpath/gpath解析方式
+    对Spring的支持比较全面
+    符合契约编程思想
