@@ -23,3 +23,11 @@ REST-assured:
         状态码：statusCode()
         响应头: header()
         内容: body()
+JSON简介：
+    是javaScript Object Notation的缩写
+    是一种轻量级的数据交换格式
+    是理想的接口数据交换语言
+    请求：
+        构造JSON请求体：
+            JSON字符串
+            HashMap对象+Jackson库
