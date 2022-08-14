@@ -1,4 +1,4 @@
-package com.hogwarts.interfaceTest.ch01_restAssured_demo;
+package com.hogwarts.interfaceTest.ch01_restAssured;
 
 import org.junit.jupiter.api.Test;
 

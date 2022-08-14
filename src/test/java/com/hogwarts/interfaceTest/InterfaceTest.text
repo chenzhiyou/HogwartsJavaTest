@@ -18,3 +18,8 @@ REST-assured:
         POST请求：
             queryParam(): 查询参数
             formParam(): 表单参数
+断言：
+    响应结果类型：
+        状态码：statusCode()
+        响应头: header()
+        内容: body()
