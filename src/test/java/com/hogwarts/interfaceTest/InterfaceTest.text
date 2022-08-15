@@ -31,3 +31,8 @@ JSON简介：
         构造JSON请求体：
             JSON字符串
             HashMap对象+Jackson库
+JSON Schema：
+    是使用JSON格式编写的
+    可以用来定义校验JSON数据的结构
+    可以用来校验JSON数据的一致性
+    可以用来校验API接口请求和响应
