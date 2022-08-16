@@ -41,3 +41,11 @@ JSON Schema：
     配置代理：
         局部：通过proxy()方法
         全局：定义proxy对象
+Headers：
+    Http Headers也叫做HTTP消息头
+    允许客户端和服务器传递附加消息
+    由名称、冒号、具体的值组成
+Cookie使用场景：
+    添加Cookie的两种方式
+        通过header()方法
+        通过cookie()方法
