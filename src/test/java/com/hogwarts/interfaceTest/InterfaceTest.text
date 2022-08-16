@@ -49,3 +49,10 @@ Cookie使用场景：
     添加Cookie的两种方式
         通过header()方法
         通过cookie()方法
+from表单：application/x-www-form-urlencoded
+    应用场景：
+        数据量不大
+        数据层级不深的情况
+        通常以键值对传递
+    使用：
+        formParams()方法
