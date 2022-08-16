@@ -56,3 +56,8 @@ from表单：application/x-www-form-urlencoded
         通常以键值对传递
     使用：
         formParams()方法
+超时处理：
+    设置超时时间
+        创建HttpClientConfig实例
+        创建RestAssuredConfig实例
+        given语句中调用config()方法
