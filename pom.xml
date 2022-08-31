@@ -140,6 +140,18 @@
             <artifactId>json-schema-validator</artifactId>
             <version>4.4.0</version>
         </dependency>
+        <!--   数据库相关依赖     -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
+        <!--   结果集转换成JSON的工具     -->
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+            <version>3.11.11</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
