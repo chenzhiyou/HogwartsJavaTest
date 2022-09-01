@@ -27,7 +27,7 @@
     </appender>
 
     <logger name="litemall" level="DEBUG"/>
-    <logger name="com" level="WARN" />
+    <logger name="com" level="DEBUG" />
     <logger name="ceshiren" level="WARN" />
     <logger name="org" level="WARN" />
     <logger name="com.hogwarts.selenium" level="DEBUG" />
