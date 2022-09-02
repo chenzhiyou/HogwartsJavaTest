@@ -75,7 +75,7 @@ public class GoodApi extends BaseLitemallApi{
 
     }
 
-    public void detailGood(Integer goodsId){
+    public Integer detailGood(Integer goodsId){
         String goodDetailUrl = "/admin/goods/detail";
         Integer productId = given()
                 .filter(apiFilter)
@@ -87,5 +87,6 @@ public class GoodApi extends BaseLitemallApi{
                 .then()
                 .log().all().extract().path("data.specifications[0].id");
         System.out.println(productId);
+        return productId;
     }
 }
