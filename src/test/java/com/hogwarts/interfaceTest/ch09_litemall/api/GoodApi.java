@@ -10,9 +10,11 @@ import static io.restassured.RestAssured.given;
 /**
  * 货品相关
  */
-public class GoodApi {
+public class GoodApi extends BaseLitemallApi{
 
-    Filter apiFilter = new ApiFilter();
+    // 问题： 随着业务接口增多，filter需要在多处进行实例化操作
+    // 解决办法：在filter的声明放到base中，其他的api继承base
+//    Filter apiFilter = new ApiFilter();
 
     // 问题:given
     // 问题：如果传入的数据必须是JSON，将Object转换为JSON

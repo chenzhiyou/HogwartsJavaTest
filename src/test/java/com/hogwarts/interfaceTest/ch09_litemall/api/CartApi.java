@@ -1,6 +1,6 @@
 package com.hogwarts.interfaceTest.ch09_litemall.api;
 
-public class CartApi {
+public class CartApi extends BaseLitemallApi{
 
     public void createProduct(){
 

@@ -19,6 +19,10 @@ public class CartApiTest {
     @BeforeAll
     public  static void setUpClass(){
         goodApi = new GoodApi();
+        //初始化token
+        goodApi.initToken("admin123", "admin123");
+        // set filter
+        goodApi.addFilter();
         cartApi = new CartApi();
 
 //        String loginUrl = "https://litemall.hogwarts.ceshiren.com/admin/auth/login";

@@ -1,5 +1,10 @@
 package com.hogwarts.interfaceTest.ch09_litemall.api;
 
+import com.jayway.jsonpath.JsonPath;
+import io.restassured.filter.Filter;
+
+import static io.restassured.RestAssured.given;
+
 /**
  * 输入信息(model)
  *      输入信息表示接口请求过程中和业务相关的具体数据信息
@@ -18,4 +23,38 @@ package com.hogwarts.interfaceTest.ch09_litemall.api;
  *          使用：given.filter(重写的filter实例)
  */
 public class BaseLitemallApi {
+    // 问题： token属于谁？
+    public String token;
+    public Filter apiFilter;
+
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    // 初始化token的时候需要传入用户名和密码
+    public void initToken(String username, String password){
+        String loginUrl = "https://litemall.hogwarts.ceshiren.com/admin/auth/login";
+        String loginData = "{\"username\":\""+username+"\",\"password\":\""+password+"\",\"code\":\"\"}";
+
+        System.out.println(loginData);
+        String loginResponse = given().body(loginData)
+                .contentType("application/json")
+                .when()
+                .post(loginUrl)
+                .then()
+                .log().all().extract().response().asString();
+//        System.out.println(loginResponse);
+        String token = JsonPath.read(loginResponse, "$.data.token");
+        this.token = token;
+    }
+
+
+    public void addFilter(){
+        this.apiFilter = new ApiFilter(this.getToken());
+    }
 }

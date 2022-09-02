@@ -11,7 +11,18 @@ import static com.hogwarts.interfaceTest.ch09_litemall.filter.Log.log;
 import static io.qameta.allure.Allure.addAttachment;
 import static io.restassured.RestAssured.given;
 
+/**
+ * 问题1：出现多个角色，多个token，如何处理
+ * 问题2： 多次调用login请求获取token，影响用例执行效率
+ * 解决方案：添加一个初始化token的方法，并调通，并添加一个初始化filter的方法，传入token给filter
+ */
 public class ApiFilter implements Filter{
+
+    public String token;
+
+    public ApiFilter(String token){
+        this.token = token;
+    }
     @Override
     public Response filter(
             FilterableRequestSpecification filterableRequestSpecification,
@@ -19,19 +30,10 @@ public class ApiFilter implements Filter{
             FilterContext filterContext) {
         // 原始的请求信息
         // 添加配置信息
-        String loginUrl = "https://litemall.hogwarts.ceshiren.com/admin/auth/login";
-        String loginData = "{\"username\":\"admin123\",\"password\":\"admin123\",\"code\":\"\"}";
 
-        String loginResponse = given().body(loginData)
-                .contentType("application/json")
-                .when()
-                .post(loginUrl)
-                .then()
-                .log().all().extract().response().asString();
-//        System.out.println(loginResponse);
-        String token = JsonPath.read(loginResponse, "$.data.token");
         filterableRequestSpecification.contentType("application/json");
         // 添加一个头信息
+        // 问题： filter依然需要token
         filterableRequestSpecification.header("X-Litemall-Admin-Token", token);
         // 设置基地址 等于配置域名
         filterableRequestSpecification.baseUri("https://litemall.hogwarts.ceshiren.com");
