@@ -1,5 +1,6 @@
 package com.hogwarts.interfaceTest.ch09_litemall;
 
+import com.hogwarts.interfaceTest.ch09_litemall.api.BaseLitemallApi;
 import com.hogwarts.interfaceTest.ch09_litemall.api.CartApi;
 import com.hogwarts.interfaceTest.ch09_litemall.api.GoodApi;
 import com.hogwarts.interfaceTest.ch09_litemall.model.CartModel;
@@ -9,27 +10,22 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
-public class CartApiTest {
+public class CartApiTest extends BaseTest{
 
     public static GoodApi goodApi;
     public static CartApi cartApi;
-    public static String token;
-    public static String userToken;
+
 
     @BeforeAll
     public  static void setUpClass(){
+        // 问题： goodsApi实例化的过程中，没有给传递token，所以导致头信息为空
         goodApi = new GoodApi();
-        //初始化token
-        goodApi.setRole("admin");
-        goodApi.initToken("admin123", "admin123");
-        // set filter
-        goodApi.addFilter();
+        goodApi.addFilter(admin);
         cartApi = new CartApi();
-        cartApi.setRole("client");
-        cartApi.initToken("user123", "user123");
-        cartApi.addFilter();
+        cartApi.addFilter(user);
     }
 
     /**

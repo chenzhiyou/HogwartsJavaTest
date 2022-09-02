@@ -79,7 +79,8 @@ public class BaseLitemallApi {
 
     }
 
-    public void addFilter(){
-        this.apiFilter = new ApiFilter(this.getToken());
+    public void addFilter(BaseLitemallApi baseLitemallApi){
+
+        this.apiFilter = new ApiFilter(baseLitemallApi.getToken());
     }
 }
