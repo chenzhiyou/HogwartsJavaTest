@@ -21,17 +21,17 @@ public class CartApiTest {
         goodApi = new GoodApi();
         cartApi = new CartApi();
 
-        String loginUrl = "https://litemall.hogwarts.ceshiren.com/admin/auth/login";
-        String loginData = "{\"username\":\"admin123\",\"password\":\"admin123\",\"code\":\"\"}";
-
-        String loginResponse = given().body(loginData)
-                .contentType("application/json")
-                .when()
-                .post(loginUrl)
-                .then()
-                .log().all().extract().response().asString();
-//        System.out.println(loginResponse);
-        token = JsonPath.read(loginResponse, "$.data.token");
+//        String loginUrl = "https://litemall.hogwarts.ceshiren.com/admin/auth/login";
+//        String loginData = "{\"username\":\"admin123\",\"password\":\"admin123\",\"code\":\"\"}";
+//
+//        String loginResponse = given().body(loginData)
+//                .contentType("application/json")
+//                .when()
+//                .post(loginUrl)
+//                .then()
+//                .log().all().extract().response().asString();
+////        System.out.println(loginResponse);
+//        token = JsonPath.read(loginResponse, "$.data.token");
 
         String userLoginUrl = "https://litemall.hogwarts.ceshiren.com/wx/auth/login";
         String userLoginData = "{\"username\":\"user123\",\"password\":\"user123\",\"code\":\"\"}";
@@ -59,9 +59,9 @@ public class CartApiTest {
         String goodsData = "{\"goods\":{\"picUrl\":\"\",\"gallery\":[],\"isHot\":false,\"isNew\":true,\"isOnSale\":true,\"goodsSn\":\"111111\",\"name\":\"面皮\"},\"specifications\":[{\"specification\":\"规格\",\"value\":\"标准\",\"picUrl\":\"\"}],\"products\":[{\"id\":0,\"specifications\":[\"标准\"],\"price\":0,\"number\":0,\"url\":\"\"}],\"attributes\":[]}";
 //        goodApi.createGood(token, goodsData);
         // 调用查询商品列表接口，获取商品ID
-        Integer goodsID =goodApi.getGood(token);
+        Integer goodsID =goodApi.getGood();
         // 查询商品详情接口，获取商品库存ID
-        goodApi.detailGood(token, goodsID);
+        goodApi.detailGood(goodsID);
         // 调用添加购物车接口
         cartApi.createProduct();
 
