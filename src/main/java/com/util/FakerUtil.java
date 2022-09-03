@@ -21,7 +21,7 @@ public class FakerUtil {
         return first+s;
     }
 
-    private static int getNum(int num2) {
+    public static int getNum(int num2) {
         Random ra = new Random();
         int number = ra.nextInt(num2);
         return number;
