@@ -34,14 +34,10 @@ public class GoodApi extends BaseLitemallApi{
 //    }
     public void  createGood(String goodsData){
 
-
         String addProductURL = "/admin/goods/create";
-
         given()
                 .filter(apiFilter)
                 .body(goodsData)
-                .contentType("application/json")
-//                .header("X-Litemall-Admin-Token", token)
                 .when()
                 .post(addProductURL)
                 .then()
@@ -59,7 +55,6 @@ public class GoodApi extends BaseLitemallApi{
 
         Integer goodsId = given()
                 .filter(apiFilter)
-                .contentType("application/json")
 //                .header("X-Litemall-Admin-Token", token)
                 .param("name", "开心药丸01")
                 .when()
@@ -79,7 +74,6 @@ public class GoodApi extends BaseLitemallApi{
         String goodDetailUrl = "/admin/goods/detail";
         Integer productId = given()
                 .filter(apiFilter)
-                .contentType("application/json")
 //                .header("X-Litemall-Admin-Token", token)
                 .param("id", goodsId)
                 .when()

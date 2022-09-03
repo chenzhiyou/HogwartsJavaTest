@@ -39,8 +39,8 @@ public class CartApiTest extends BaseTest{
         // 上架商品
         CartModel cartModel = new CartModel();
         cartModel.setNumber(1);
-//        String goodsData = "{\"goods\":{\"picUrl\":\"\",\"gallery\":[],\"isHot\":false,\"isNew\":true,\"isOnSale\":true,\"goodsSn\":\"111111\",\"name\":\"面皮\"},\"specifications\":[{\"specification\":\"规格\",\"value\":\"标准\",\"picUrl\":\"\"}],\"products\":[{\"id\":0,\"specifications\":[\"标准\"],\"price\":0,\"number\":0,\"url\":\"\"}],\"attributes\":[]}";
-//        goodApi.createGood(token, goodsData);
+        String goodsData = "{\"goods\":{\"picUrl\":\"\",\"gallery\":[],\"isHot\":false,\"isNew\":true,\"isOnSale\":true,\"goodsSn\":\"111111\",\"name\":\"面皮\"},\"specifications\":[{\"specification\":\"规格\",\"value\":\"标准\",\"picUrl\":\"\"}],\"products\":[{\"id\":0,\"specifications\":[\"标准\"],\"price\":0,\"number\":0,\"url\":\"\"}],\"attributes\":[]}";
+        goodApi.createGood(goodsData);
         // 调用查询商品列表接口，获取商品ID
         Integer goodsID =goodApi.getGood();
         cartModel.setGoodsId(goodsID);
