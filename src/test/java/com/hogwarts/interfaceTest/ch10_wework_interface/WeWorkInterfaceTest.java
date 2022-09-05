@@ -25,6 +25,17 @@ import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * 参数传递模板化：
+ *      问题：
+ *          硬编码
+ *          参数传递模板后需要特定解析代码才能获取值
+ *      解决思路：
+ *          不编写解析规则，直接使用第三方依赖解决替换
+ *      解决方案：
+ *          JSONPath：只能解析Json参数
+ *          Mustache：
+ */
 public class WeWorkInterfaceTest {
     public static String access_token;
 
