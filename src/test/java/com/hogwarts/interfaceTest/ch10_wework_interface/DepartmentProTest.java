@@ -115,7 +115,7 @@ public class DepartmentProTest extends BaseTest{
         Response response = given()
                 .contentType("application/json")
                 .queryParam("access_token", access_token)
-                .queryParam("id", 2)
+//                .queryParam("id", 2)
                 .when()
                 .get(departmentListUrl)
                 .then()
