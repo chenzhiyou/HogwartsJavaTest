@@ -49,4 +49,53 @@ public class BaseApi {
 
         return response;
     }
+
+    public Response run(List<Filter> filterList, String url, String contentType,
+                        HashMap<String, String> headers,
+                        HashMap<String, String> query) {
+        /**
+         * 所有的请求都需要拦截相关的filter，那可以写到baseAPI中
+         * 部分请求需要登录，部分请求不需要，建议写到各个接口上
+         */
+        RequestSpecification requestSpecification = given().log().all().filters(filterList);
+        if (contentType != null) {
+            requestSpecification.contentType(contentType);
+        }
+        if (headers != null) {
+            requestSpecification.headers(headers);
+        }
+
+        if (query != null && query.size() > 0) {
+            requestSpecification.formParams(query);
+        }
+        Response response = requestSpecification.request("get", url)
+                .then().log().all().extract().response();
+
+        return response;
+
+    }
+
+    public Response run(List<Filter> filterList, String url, String contentType,
+                        HashMap<String, String> headers,
+                        HashMap<String, String> query, String body){
+        /**
+         * 所有的请求都需要拦截相关的filter，那可以写到baseAPI中
+         * 部分请求需要登录，部分请求不需要，建议写到各个接口上
+         */
+        RequestSpecification requestSpecification = given().log().all().filters(filterList);
+        if (contentType != null){
+            requestSpecification.contentType(contentType);
+        }
+        if (headers!=null){
+            requestSpecification.headers(headers);
+        }
+        if (body != null){
+            requestSpecification.body(body);
+        }
+        Response response = requestSpecification.request("post", url)
+                .then().log().all().extract().response();
+
+        return response;
+
+    }
 }

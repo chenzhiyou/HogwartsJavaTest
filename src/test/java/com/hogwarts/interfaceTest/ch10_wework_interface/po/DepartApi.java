@@ -13,6 +13,9 @@ import java.util.HashMap;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -38,7 +41,33 @@ public class DepartApi extends BaseApi{
         List<Filter> filters = new ArrayList<Filter>(){{
             add(new ApiFilter());
         }};
-        Response response = run(filters,"post",creatDepartmentUrl, "application/json",null, null, jsonString);
+//        Response response = run(filters,"post",creatDepartmentUrl, "application/json",null, null, jsonString);
+        Response response = run(filters,creatDepartmentUrl, "application/json",null, null, jsonString);
+
         return response;
     }
+
+    public Response getDepart(){
+        String departmentListUrl = "https://qyapi.weixin.qq.com/cgi-bin/department/simplelist";
+        List<Filter> filters = new ArrayList<Filter>(){{
+            add(new ApiFilter());
+        }};
+        Response getResponse = run(filters,departmentListUrl, "application/json",null, null);
+        return getResponse;
+    }
+
+    public Response deleteDepart(int departId){
+        String deleteUrl = "https://qyapi.weixin.qq.com/cgi-bin/department/delete";
+
+        HashMap<String, String> query = new HashMap<String, String>(){{
+            put("id", String.valueOf(departId));
+        }};
+        List<Filter> filters = new ArrayList<Filter>(){{
+            add(new ApiFilter());
+        }};
+        Response response = run(filters, deleteUrl,"application/json",null, query);
+        return response;
+    }
+
+
 }
