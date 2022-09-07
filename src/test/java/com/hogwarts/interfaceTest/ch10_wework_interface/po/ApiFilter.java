@@ -15,6 +15,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+import static io.qameta.allure.Allure.addAttachment;
 import static io.restassured.config.LogConfig.logConfig;
 import static java.lang.invoke.MethodHandles.lookup;
 import static org.slf4j.LoggerFactory.getLogger;
@@ -41,6 +42,7 @@ public class ApiFilter extends BaseApi implements Filter {
                     logConfig().blacklistedHeaders(),
                     new PrintStream(new FileOutputStream(apiLogPath, true)), true);
             logger.info("接口请求日志"+requestPrintInfo);
+            addAttachment("接口请求日志", requestPrintInfo);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -56,6 +58,8 @@ public class ApiFilter extends BaseApi implements Filter {
                     logConfig().blacklistedHeaders());
 
             logger.info("接口响应日志"+responsePrintInfo);
+            addAttachment("接口响应日志", responsePrintInfo);
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
