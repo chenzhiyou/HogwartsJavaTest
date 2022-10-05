@@ -1,0 +1,37 @@
+datas:
+  - a: 1
+    b: 1
+    result: 2
+    message: 有效2个整数【1,1】
+  - a: 98
+    b: 98
+    result: 196
+    message: 有效边界值相加【98,98】
+  - a: -98
+    b: 98
+    result: 0
+    message: 有效边界值相加【-98,98】
+  - a: 98
+    b: -98
+    result: 0
+    message: 有效边界值相加【98,-98】
+  - a: -98
+    b: -98
+    result: -196
+    message: 有效边界值相加【-98,-98】
+  - a: 100
+    b: 0
+    result: 0
+    message: 无效边界值相加【100,0】
+  - a: -100
+    b: -1
+    result: 0
+    message: 无效边界值相加【-100,-1】
+  - a: 2
+    b: 100
+    result: 0
+    message: 无效边界值相加【2,100】
+  - a: 1
+    b: -100
+    result: 0
+    message: 无效边界值相加【1,-100】

@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.hogwarts.junit5Basics.ch04_junit5assert.AssertAllDemoTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.01 s <<< FAILURE! - in com.hogwarts.junit5Basics.ch04_junit5assert.AssertAllDemoTest
+hogwarts  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
+	at com.hogwarts.junit5Basics.ch04_junit5assert.AssertAllDemoTest.hogwarts(AssertAllDemoTest.java:18)
+
+assertAllDemo2  Time elapsed: 0.004 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+执行流 (2 failures)
+	org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
+	org.opentest4j.AssertionFailedError: expected: <4> but was: <2>
+	at com.hogwarts.junit5Basics.ch04_junit5assert.AssertAllDemoTest.assertAllDemo2(AssertAllDemoTest.java:41)
+
+assertAllDemo  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+NumberAssert (2 failures)
+	org.opentest4j.AssertionFailedError: expected: <3> but was: <2>
+	org.opentest4j.AssertionFailedError: expected: <4> but was: <2>
+	at com.hogwarts.junit5Basics.ch04_junit5assert.AssertAllDemoTest.assertAllDemo(AssertAllDemoTest.java:27)
+

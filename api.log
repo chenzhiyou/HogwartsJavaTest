@@ -1,0 +1,1360 @@
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=dyyT4_HC22EX1tCib819X72cA6IyO6KtFuQga24UmSOs9xf2jkx2DLQjoEu1CaSU-SoKO5Dd6sftPmyiLOirdrJT3xVR57ESBFm9E6rfCoubm7hFX_5dw_LTXEKWe84RDcxSsNYGf9Omdj3CqIN1UAKjiu6g_q9LKZIEsXe4uP9c5XN8TQm7oi1tXVeZQGROXflxUtLjRO_kMInNoL7Qdw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=dyyT4_HC22EX1tCib819X72cA6IyO6KtFuQga24UmSOs9xf2jkx2DLQjoEu1CaSU-SoKO5Dd6sftPmyiLOirdrJT3xVR57ESBFm9E6rfCoubm7hFX_5dw_LTXEKWe84RDcxSsNYGf9Omdj3CqIN1UAKjiu6g_q9LKZIEsXe4uP9c5XN8TQm7oi1tXVeZQGROXflxUtLjRO_kMInNoL7Qdw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "潘峻熙13488472325",
+    "parentid": 1,
+    "order": 6
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=dyyT4_HC22EX1tCib819X72cA6IyO6KtFuQga24UmSOs9xf2jkx2DLQjoEu1CaSU-SoKO5Dd6sftPmyiLOirdrJT3xVR57ESBFm9E6rfCoubm7hFX_5dw_LTXEKWe84RDcxSsNYGf9Omdj3CqIN1UAKjiu6g_q9LKZIEsXe4uP9c5XN8TQm7oi1tXVeZQGROXflxUtLjRO_kMInNoL7Qdw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=dyyT4_HC22EX1tCib819X72cA6IyO6KtFuQga24UmSOs9xf2jkx2DLQjoEu1CaSU-SoKO5Dd6sftPmyiLOirdrJT3xVR57ESBFm9E6rfCoubm7hFX_5dw_LTXEKWe84RDcxSsNYGf9Omdj3CqIN1UAKjiu6g_q9LKZIEsXe4uP9c5XN8TQm7oi1tXVeZQGROXflxUtLjRO_kMInNoL7Qdw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "史明辉13947898933",
+    "parentid": 1,
+    "order": 10
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=dyyT4_HC22EX1tCib819X72cA6IyO6KtFuQga24UmSOs9xf2jkx2DLQjoEu1CaSU-SoKO5Dd6sftPmyiLOirdrJT3xVR57ESBFm9E6rfCoubm7hFX_5dw_LTXEKWe84RDcxSsNYGf9Omdj3CqIN1UAKjiu6g_q9LKZIEsXe4uP9c5XN8TQm7oi1tXVeZQGROXflxUtLjRO_kMInNoL7Qdw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=dyyT4_HC22EX1tCib819X72cA6IyO6KtFuQga24UmSOs9xf2jkx2DLQjoEu1CaSU-SoKO5Dd6sftPmyiLOirdrJT3xVR57ESBFm9E6rfCoubm7hFX_5dw_LTXEKWe84RDcxSsNYGf9Omdj3CqIN1UAKjiu6g_q9LKZIEsXe4uP9c5XN8TQm7oi1tXVeZQGROXflxUtLjRO_kMInNoL7Qdw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "钱志泽15093312115",
+    "parentid": 1,
+    "order": 20
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 02:05:09 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 40
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 11
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "傅子骞13416512195",
+    "parentid": 1,
+    "order": 26
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 13:54:16 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 40
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 12
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "宋晓博13572770050",
+    "parentid": 1,
+    "order": 6
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:31:51 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 40
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 13
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "田烨霖13892863911",
+    "parentid": 1,
+    "order": 3
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:38:00 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 40
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 14
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:38:01 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 486
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        },
+        {
+            "id": 4,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 5,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 6,
+            "parentid": 1,
+            "order": 7
+        },
+        {
+            "id": 7,
+            "parentid": 1,
+            "order": 21
+        },
+        {
+            "id": 8,
+            "parentid": 1,
+            "order": 12
+        },
+        {
+            "id": 9,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 10,
+            "parentid": 1,
+            "order": 10
+        },
+        {
+            "id": 11,
+            "parentid": 1,
+            "order": 20
+        },
+        {
+            "id": 12,
+            "parentid": 1,
+            "order": 26
+        },
+        {
+            "id": 13,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 14,
+            "parentid": 1,
+            "order": 3
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "钟昊天13524758410",
+    "parentid": 1,
+    "order": 3
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:39:14 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 40
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 15
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:39:15 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 519
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        },
+        {
+            "id": 4,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 5,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 6,
+            "parentid": 1,
+            "order": 7
+        },
+        {
+            "id": 7,
+            "parentid": 1,
+            "order": 21
+        },
+        {
+            "id": 8,
+            "parentid": 1,
+            "order": 12
+        },
+        {
+            "id": 9,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 10,
+            "parentid": 1,
+            "order": 10
+        },
+        {
+            "id": 11,
+            "parentid": 1,
+            "order": 20
+        },
+        {
+            "id": 12,
+            "parentid": 1,
+            "order": 26
+        },
+        {
+            "id": 13,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 14,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 15,
+            "parentid": 1,
+            "order": 3
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:49:27 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 519
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        },
+        {
+            "id": 4,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 5,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 6,
+            "parentid": 1,
+            "order": 7
+        },
+        {
+            "id": 7,
+            "parentid": 1,
+            "order": 21
+        },
+        {
+            "id": 8,
+            "parentid": 1,
+            "order": 12
+        },
+        {
+            "id": 9,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 10,
+            "parentid": 1,
+            "order": 10
+        },
+        {
+            "id": 11,
+            "parentid": 1,
+            "order": 20
+        },
+        {
+            "id": 12,
+            "parentid": 1,
+            "order": 26
+        },
+        {
+            "id": 13,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 14,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 15,
+            "parentid": 1,
+            "order": 3
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "白旭尧13453548644",
+    "parentid": 1,
+    "order": 26
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:49:29 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 40
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 16
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:50:06 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 553
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        },
+        {
+            "id": 4,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 5,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 6,
+            "parentid": 1,
+            "order": 7
+        },
+        {
+            "id": 7,
+            "parentid": 1,
+            "order": 21
+        },
+        {
+            "id": 8,
+            "parentid": 1,
+            "order": 12
+        },
+        {
+            "id": 9,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 10,
+            "parentid": 1,
+            "order": 10
+        },
+        {
+            "id": 11,
+            "parentid": 1,
+            "order": 20
+        },
+        {
+            "id": 12,
+            "parentid": 1,
+            "order": 26
+        },
+        {
+            "id": 13,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 14,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 15,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 16,
+            "parentid": 1,
+            "order": 26
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "谭俊驰15052751167",
+    "parentid": 1,
+    "order": 17
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:50:07 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 40
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 17
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:07 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 587
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        },
+        {
+            "id": 4,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 5,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 6,
+            "parentid": 1,
+            "order": 7
+        },
+        {
+            "id": 7,
+            "parentid": 1,
+            "order": 21
+        },
+        {
+            "id": 8,
+            "parentid": 1,
+            "order": 12
+        },
+        {
+            "id": 9,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 10,
+            "parentid": 1,
+            "order": 10
+        },
+        {
+            "id": 11,
+            "parentid": 1,
+            "order": 20
+        },
+        {
+            "id": 12,
+            "parentid": 1,
+            "order": 26
+        },
+        {
+            "id": 13,
+            "parentid": 1,
+            "order": 6
+        },
+        {
+            "id": 14,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 15,
+            "parentid": 1,
+            "order": 3
+        },
+        {
+            "id": 16,
+            "parentid": 1,
+            "order": 26
+        },
+        {
+            "id": 17,
+            "parentid": 1,
+            "order": 17
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=4
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=4
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:08 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=5
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=5
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:09 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=6
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=6
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:10 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=7
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=7
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:11 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=8
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=8
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:12 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=9
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=9
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:13 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=10
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=10
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:14 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=11
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=11
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:15 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=12
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=12
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:16 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=13
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=13
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:18 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=14
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=14
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:19 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=15
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=15
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:20 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=16
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=16
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:21 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=17
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=17
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:22 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:23 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 124
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "蒋鹤轩13542089294",
+    "parentid": 1,
+    "order": 0
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:51:24 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 39
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 4
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "卢哲瀚13418765066",
+    "parentid": 1,
+    "order": 19
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:59:15 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 39
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 5
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:59:26 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 189
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        },
+        {
+            "id": 4,
+            "parentid": 1,
+            "order": 0
+        },
+        {
+            "id": 5,
+            "parentid": 1,
+            "order": 19
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=4
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=4
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:59:27 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/delete?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw&id=5
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	id=5
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:59:28 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 32
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: deleted
+
+{
+    "errcode": 0,
+    "errmsg": "deleted"
+}
+Request method:	GET
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/simplelist?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:59:29 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 124
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: ok
+
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "department_id": [
+        {
+            "id": 1,
+            "parentid": 0,
+            "order": 100000000
+        },
+        {
+            "id": 3,
+            "parentid": 1,
+            "order": 99999000
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://qyapi.weixin.qq.com/cgi-bin/department/create?access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Proxy:			<none>
+Request params:	<none>
+Query params:	access_token=2vXDd-6WjBz3aOkdNGiB_wpeI-djxZQuOtjqyWweLrdR66ClVQ0JEUL21umWgtmwzOzWol5fRyKaUfyePjDBfuKI5nSzjEbUUhjbR7PcgU4qalOcBROQj6SJjuYQrOsJJ1sw9D-bpiifDD6Ugq7OuukhI_pyz6dRdGaR9EMuC1akHUGpiSN8nYqZIeEk8dCHErHjXi0E_BuVhwufsAxCZw
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "魏琪13566053530",
+    "parentid": 1,
+    "order": 21
+}
+HTTP/1.1 200 OK
+Date: Wed, 07 Sep 2022 14:59:30 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 39
+Connection: keep-alive
+Server: nginx
+Error-Code: 0
+Error-Msg: created
+
+{
+    "errcode": 0,
+    "errmsg": "created",
+    "id": 4
+}

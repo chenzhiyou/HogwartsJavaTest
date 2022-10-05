@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.hogwarts.junit5Basics.ch16_allure.AllureAttachmentTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! - in com.hogwarts.junit5Basics.ch16_allure.AllureAttachmentTest
+addAttachPictureTest  Time elapsed: 0.017 s  <<< ERROR!
+java.io.FileNotFoundException:  (No such file or directory)
+	at com.hogwarts.junit5Basics.ch16_allure.AllureAttachmentTest.addAttachPictureTest(AllureAttachmentTest.java:14)
+

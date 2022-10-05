@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.hogwarts.junit5Basics.ceshiren.CalculatorYamlEntityTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.283 s <<< FAILURE! - in com.hogwarts.junit5Basics.ceshiren.CalculatorYamlEntityTest
+sumYamlTest{CalculatorYamlEntity}  Time elapsed: 0.277 s  <<< ERROR!
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Cannot construct instance of `com.hogwarts.ceshiren.Data` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (File); line: 1, column: 1]
+	at com.hogwarts.junit5Basics.ceshiren.CalculatorYamlEntityTest.getYaml(CalculatorYamlEntityTest.java:55)
+	at com.hogwarts.junit5Basics.ceshiren.CalculatorYamlEntityTest.sumYamlTest(CalculatorYamlEntityTest.java:45)
+
+calculatorYamlEntity  Time elapsed: 0.005 s  <<< ERROR!
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Cannot construct instance of `com.hogwarts.ceshiren.Data` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (File); line: 1, column: 1]
+	at com.hogwarts.junit5Basics.ceshiren.CalculatorYamlEntityTest.getYaml(CalculatorYamlEntityTest.java:55)
+	at com.hogwarts.junit5Basics.ceshiren.CalculatorYamlEntityTest.calculatorYamlEntity(CalculatorYamlEntityTest.java:63)
+

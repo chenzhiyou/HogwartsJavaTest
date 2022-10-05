@@ -1,0 +1,3 @@
+default: org
+org: http://httpbin.org
+httpsEnv: https://httpbin.ceshiren.com
