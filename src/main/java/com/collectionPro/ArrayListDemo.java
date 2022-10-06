@@ -3,7 +3,7 @@ package com.collectionPro;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListDemo {
+public class ArrayListDemo {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         // 添加元素, 有序可重复
@@ -21,5 +21,6 @@ public class ListDemo {
         // 删除
         list.remove(2);
         System.out.println("删除后的list集合: " + list );
+
     }
 }
