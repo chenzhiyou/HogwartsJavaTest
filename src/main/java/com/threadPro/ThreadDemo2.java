@@ -20,6 +20,9 @@ class MyRunnable implements Runnable{
  *          1、适合多个相同的程序代码的线程去共享同一个资源
  *          2、可以避免Java中的单继承的局限性
  *          3、增加程序的健壮性，实现解耦操作，代码可以被多个线程共享，代码和线程独立
+ * 线程的常用方法：
+ *      setPriority()设置线程的有限级别
+ *          调整线程优先级：Java线程有优先级，优先级高的线程会获得较多的运行机会，优先级：只能反应线程的中或者紧急成都，不能解决是否一定先执行
  */
 public class ThreadDemo2 {
     public static void main(String[] args) {
