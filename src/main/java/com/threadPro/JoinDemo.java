@@ -21,6 +21,7 @@ public class JoinDemo {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("主线程开始执行----------------------->");
         JoinThread joinThread = new JoinThread("新加入的线程");
+        joinThread.setDaemon(true); // 设置为守护线程
         joinThread.start();
         joinThread.join();
         System.out.println("主线程结束执行----------------------->");
