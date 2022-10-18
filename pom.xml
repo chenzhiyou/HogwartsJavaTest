@@ -144,7 +144,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.30</version>
+            <version>8.0.18</version>
         </dependency>
         <!--   结果集转换成JSON的工具     -->
         <dependency>
