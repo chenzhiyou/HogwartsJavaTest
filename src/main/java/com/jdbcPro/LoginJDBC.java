@@ -16,12 +16,9 @@ public class LoginJDBC {
         ResultSet resultSet = null;
         try {
             // 注册驱动
-            Class.forName("com.mysql.jdbc.Driver");
+//            Class.forName("com.mysql.jdbc.Driver");
             // 连接数据库
-            String url = "jdbc:mysql://localhost:3306/tulingDB"; // 链接数据库的URL
-            String username = "root";
-            String password = "3158218k@";
-            connection = DriverManager.getConnection(url, username, password);
+            connection = DBUtils.getConnection();
             // 获取执行SQL的对象
             statement = connection.createStatement();
             // 执行SQL并获取结果集
@@ -37,12 +34,10 @@ public class LoginJDBC {
                     System.out.println("登录失败");
                 }
             }
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            resultSet.close();
-            statement.close();
-            connection.close();
+            DBUtils.CloseAll(connection, statement, resultSet);
         }
     }
 
