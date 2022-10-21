@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个网页</title>
+</head>
+<!--background="kafka.png"-->
+<body  bgcolor="#ffe4c4">
+    <P align="center"> body 元素的内容会被显示在浏览器中</P></br>
+    <P> body 元素的内容会被显示在浏览器中</P></br>
+<!--    这是注释-->
+html的内容中换行需要用特殊的标签
+<!--水平线-->
+<hr width="50%" size="10" color="red" align="center"/>
+<!--块标签 行内块标签-->
+    <div>
+        这是我的div标签
+        <h1>一级标题</h1>
+        <h2>二级标题</h2>
+        <h3>三级标题</h3>
+    <!--无序列表-->
+        <ul>
+            <li>春</li>
+            <li>夏</li>
+            <li>秋</li>
+            <li>冬</li>
+        </ul>
+        <!--有序列表-->
+        <ol>
+            <li>春</li>
+            <li>夏</li>
+            <li>秋</li>
+            <li>冬</li>
+        </ol>
+        <img src="kafka.png" width="100", height="100", border="2", align="middle", alt="照片的提示" title="我是图片的标题">
+    </div>
+    <span>这是我的span标签</span>
+    <a href="https://baidu.com"> 超链接</a>
+    <div>
+        <h3>表格</h3>
+        <table border="1" width="400" align="center" cellpadding="0", cellspacing="0">
+            <caption>表格标题</caption>
+            <tr>
+                <!--th会有加粗居中的效果-->
+                <th>序号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>杨过</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>老顽童</td>
+                <td>55</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3>表单标签部分</h3>
+<!--action表示提交的地址-->
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="username"/></td>
+                </tr>
+                <tr>
+                    <td>密码</td>
+                    <td><input type="password" name="password"/></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <input type="submit" value="登录">
+                    </td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td>
+                        <input type="radio" name="sex" value="woman" checked>女
+                        <input type="radio" name="sex" value="man">男
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>爱好</td>
+                    <td>
+                        <input type="checkbox" name="hobbies" value="basketball" checked>打篮球
+                        <input type="checkbox" name="hobbies" value="game">打游戏
+                        <input type="checkbox" name="hobbies" value="huahua">画画
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>生日</td>
+                    <td>
+                        <input type="date" name="birthday" value="birthday" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>时间</td>
+                    <td>
+                        <input type="time" name="time" value="time" checked>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>邮箱</td>
+                    <td>
+                        <input type="email" name="email" value="email" checked>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>重置</td>
+                    <td>
+                        <input type="reset" name="reset" value="重置" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>籍贯</td>
+                    <td>
+                        <select>
+                            <option>请选择</option>
+                            <option>北京</option>
+                            <option>上海</option>
+                            <option>广州</option>
+                            <option>深圳</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+<frameset>
+
+</frameset>
+</body>
+</html>
