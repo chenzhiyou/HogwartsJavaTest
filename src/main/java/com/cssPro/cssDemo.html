@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导入样式</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #span1{
+            color: blue;
+            font-size: 20px;
+        }
+        span{
+            color: red;
+            font-size: 20px;
+        }
+        .p1 {
+            color: green;
+            font-size: 20px;
+        }
+        input[type='text']{
+            border: 1px solid red;
+            width: 100px;
+            background-color: pink;
+        }
+        /*后代选择器*/
+        div span{
+            color: aquamarine;
+        }
+        /*子元素选择器*/
+        div > span{
+            color: cornflowerblue;
+        }
+        p{
+            /*文字相关属性*/
+            font-size: 20px ;
+            font-family: "Microsoft YaHei";
+            font-style: normal;
+            font-weight: bold;
+        }
+        #pContent{
+            color: blueviolet;
+            text-indent: 10px;
+            text-decoration: underline;
+            text-align: left;
+            word-spacing: 20px;
+        }
+    </style>
+    <!--外部样式-->
+    <link href="style.css" rel="stylesheet", type="text/css">
+</head>
+<body>
+<div style="border: 1px solid red; width: 200px; height: 200px; font-size: 14px; font-weight: bold">
+    这是我的内容-内嵌样式
+</div>
+
+<div>
+    这是我的内容-内部样式
+</div>
+<div>
+    <p class="p1">这是P1的内容</p>
+    <span id="span1" class="p1">这是span1的内容</span>
+    <span id="span2">这是span2的内容</span>
+    <p class="p1">这是P1的内容</p>
+</div>
+<h2 class="p1">这是h2标题的内容</h2>
+<form name="login" action="#" method="get">
+    <font size="3">用户名</font>
+    <input type="text" name="username" value="zhangsan"><br/>
+    <font size="3">密码</font>
+    <input type="password" name="password" value="123456"><br/>
+    <input type="submit" value="登录">
+</form>
+<div>
+    <span>这是div下的span标签</span>
+    <span>这是div下的span标签</span>
+    <p>
+        <span>这是P下的span标签</span>
+        <span>这是P下的span标签</span>
+    </p>
+</div>
+<p>
+    CSS 中设置的字体
+</p>
+<div id="pContent">
+    这一行文字有下划线
+    CSS 中设置的字体
+    CSS 中设置的字体CSS 中设置的字体
+</div>
+</body>
+</html>

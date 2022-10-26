@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动属性</title>
+    <style>
+        #one{
+            border: solid red 2px;
+            height: 100px;
+            width: 100px;
+            float: left;
+            /*相对定位属性*/
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        #two{
+            border: solid blue 2px;
+            height: 100px;
+            width: 100px;
+            float: left;
+            position: relative;
+        }
+        #parent{
+            border: solid green 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one">第一个盒子</div>
+        <div id="two">第二个盒子</div>
+        <div id="three">第二个盒子</div>
+    </div>
+</body>
+</html>
