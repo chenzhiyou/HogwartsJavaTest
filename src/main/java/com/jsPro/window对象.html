@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+    <script>
+        var win;
+        function openWin(){
+            win = window.open("https://www.baidu.com")
+        }
+        function closeWin(){
+            // 默认关闭所在的窗口
+            // window.close();
+            win.close();// 谁调用我，我关闭谁
+        }
+        function newDoc(){
+            window.location.href("https://www.baidu.com");
+            
+        }
+    </script>
+</head>
+<body>
+<button onclick="openWin()">打开窗口</button>
+<button onclick="closeWin()">关闭窗口</button>
+<input type="button" value="Load new document" onclick="newDoc()">
+</body>
+</html>

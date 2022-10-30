@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript基本语法</title>
+    <script>
+        var a = 23;
+        document.write("a:" +a + "<br/>");
+        document.write("a的数据类型：" + typeof(a)+ "<br/>")
+        a = "hello";
+        document.write("a:" +a+ "<br/>");
+        document.write("a的数据类型：" + typeof(a)+ "<br/>")
+        a = "abc";
+        document.write("a:" +a+ "<br/>");
+        document.write("a的数据类型：" + typeof(a)+ "<br/>")
+        a = true;
+        document.write("a:" +a+ "<br/>");
+        document.write("a的数据类型：" + typeof(a)+ "<br/>")
+        a = null;
+        document.write("a:" +a+ "<br/>");
+        document.write("a的数据类型：" + typeof(a)+ "<br/>")
+        var b;
+        document.write("b:" +b+ "<br/>");
+        document.write("b的数据类型：" + typeof(b)+ "<br/>")
+        document.write("<hr/>")
+
+        // JSON
+        var stu = {stuno:1, name:'zhangsan', age:23};
+        document.write("name的数据为"+ stu.name+ "<br/>")
+        document.write("stuno的数据为"+ stu.stuno+ "<br/>")
+        document.write("age的数据为"+ stu.age+ "<br/>")
+        document.write("<hr/>")
+        //创建的时候赋值 静态初始化 不需要统一数据类型
+        var arr = new Array(1, 3, 4,5, true);
+        document.write("arr[0]" + arr[0]+ "<br/>");
+        // 动态初始化 没有值的时候 默认为undefined
+        // 数组的长度是可变的，类型也是可变的
+        var arr1 = new Array(5);
+        arr1[0] = "123";
+        document.write("arr1[0]" + arr1[0]+ "<br/>");
+        document.write("arr1[1]" + arr1[1]+ "<br/>");
+        arr.push(100, 200, 300);
+        var arrStr = arr.join("-");
+        document.write("arrStr:" + arrStr+ "<br/>");
+        // 数组的遍历
+        for (var i=0; i<arr.length; i++){
+            document.write(arr[i]+ "<br/>");
+        }
+
+        // 对象的数组
+        var student = [
+            {id:1, name:"张三", age:18},
+            {id:2, name:"李四", age:18},
+            {id:3, name:"王五", age:19}
+        ];
+
+        for (var m = 0; m < student.length; m++){
+            document.write(student[m].id +"<br/>");
+            document.write(student[m].name +"<br/>");
+            document.write(student[m].age +"<br/>");
+            document.write("<hr/>")
+        }
+
+        var date = new Date();
+        document.write(date.toLocaleDateString()+"<br/>")
+        var fullYear = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDate();
+        document.write(fullYear +"<br/>")
+        document.write(month +"<br/>")
+        document.write(day +"<br/>")
+
+        let number = Math.random();
+        document.write(number +"<br/>")
+
+        document.write("<hr/>")
+        // 运算符
+        var num3 = NaN;
+        document.write(num3 +":"+ typeof(num3)+ "<br/>" );
+        var obj = null;
+        document.write(obj+":" + typeof(obj)+ "<br/>" );
+
+        var i  = new Number(1);
+        document.write(i+":" + typeof(i)+ "<br/>" );
+
+        document.write("<hr/>")
+        // 逻辑运算符
+        var b1 = true;
+        var b2 = false;
+        var b3 = false;
+
+        var result = b1&&b2;
+        document.write("result: "+ result+ "<br/>" )
+        // 其他类型转换为boolean
+        /**
+         * number: 0或者NaN为假，其他为真
+         * string： 除了空字符串("")为false，其他都为true
+         * null&undefined都是false
+         * 对象：所有对象都为true
+         */
+
+        var num = 0;
+        document.write(!num+ "<br/>" );
+        // 逻辑与的短路效果，就是遇到false，立马就返回，逻辑||遇到true立马返回
+        var flag = undefined &&"woow";
+        document.write("<hr/>")
+        // 比较运算符
+        var v1 = 1;
+        var v2 = "1";
+
+        // 两个等号比较，不考虑数据类型，如果是三个等号，是会比较类型和数值
+        var res = v1 ===v2;
+        document.write("res: "+ res+ "<br/>" );
+        document.write("<hr/>")
+        // 分支和循环
+        var a =1;
+        var b = 2;
+        var num = 34; // 可以把其他类型的转换成Boolean
+        if (a >1){
+            document.write("a大于1成立")
+        }else{
+            document.write("a大于1不成立")
+        }
+        document.write("<hr/>")
+        // 定义函数
+        function fun1(){
+            document.write("<hr/>")
+        }
+        fun1();
+        var fun2 = function(){
+            document.write("hello javaScript");
+        }
+        fun2();
+
+        function fun3(a,b){
+            document.write("a:" + a );
+            document.write("b:" + b )
+        }
+
+        var result = fun3(3, 4);
+        document.write("result:" + result + "<br/>");
+        function clickFun() {
+            alert("username文本框被点击了")
+        }
+        // 页面加载完成之后，会执行里面的代码
+        window.onload=function (){
+            document.getElementById("username1").onclick=function() {
+                alert("username1文本框被点击了")
+            }
+            document.getElementById("username").onmouseout=function (){
+                alert("鼠标离开文本框的时候")
+            }
+            document.getElementById("username").onmouseover=function (){
+                alert("鼠标移动到文本框的时候")
+            }
+        }
+
+        var reg = new RegExp("\\w");
+        var reg2 = /^\d\w{6,12}/;
+        var str = "1zhangsan";
+        if (reg2.test(str)){
+            document.write("匹配到了"+"<br/>");
+        }else{
+            document.write("没有匹配到了"+"<br/>");
+        }
+        var strtr = "123";
+        var num123 = parent(strtr);
+        document.write(typeof(num123));
+    </script>
+</head>
+<body>
+<form id="form" action="#" method="get">
+    <input id="username" name="username" onclick="clickFun();">
+    <input id="username1" name="username1" type="text">
+    <select id="sel">
+        <option>请选择</option>
+        <option>北京</option>
+        <option>广州</option>
+        <option>上海</option>
+    </select>
+    <script>
+        // 绑定一个点击事件
+        // document.getElementById("username1").onclick=function() {
+        //     alert("username1文本框被点击了")
+        // }
+    </script>
+</form>
+</body>
+</html>

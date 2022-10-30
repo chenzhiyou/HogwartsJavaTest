@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作HTML元素</title>
+    <script>
+        function addEle(){
+            var pHTML = document.createElement("p");
+            var text = document.createTextNode("这是我自己创建的内容");
+            // <p>这是我自己创建的内容</p>
+            pHTML.appendChild(text);
+            pHTML.setAttribute("id", "p3");
+            var div1 = document.getElementById("div1");
+            div1.appendChild(pHTML);
+
+        }
+
+        function delEle(){
+            var p3 = document.getElementById("p3");
+            var div1 = document.getElementById("div1");
+            div1.removeChild(p3);
+
+        }
+    </script>
+</head>
+<body>
+  <div id="div1">
+      <p id="p1">这还是一个段落</p>
+      <p id="p2">这还是另一个段落</p>
+  </div>
+<button onclick="addEle();">增加元素</button>
+  <button onclick="delEle();">删除元素</button>
+</body>
+</html>

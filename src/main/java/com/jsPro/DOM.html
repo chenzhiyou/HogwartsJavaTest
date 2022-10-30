@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+    <div id="div5">div5</div>
+
+    <div class="cls">div6</div>
+    <div class="cls">div7</div>
+
+    <input name="username" value="username">
+    <p id="p1"> 这是P标签1</p>
+    <p id="p2"> 这是P标签2</p>
+    <p id="p3">
+        <span id="span1">这是span1标签的内容</span>
+        <span id="span2">这是span2标签的内容</span>
+    </p>
+    <button onclick="func2()">改变P2标签的innerHTML</button>
+    <button onclick="func3()">改变P2标签的innerHTML</button>
+
+</body>
+    <script>
+        var div1 = document.getElementById("div1");
+        alert("div1"+div1)
+        div1.innerText = "我自己设置的内容";
+        
+        // 通过标签名字
+        var divArr = document.getElementsByTagName("div");
+        alert(divArr.length);
+
+        // 通过类名
+        var elementsByClassName = document.getElementsByClassName("cls");
+        alert(elementsByClassName.length)
+        // 根据名字
+        var elementsByName = document.getElementsByName("username");
+        alert(elementsByName[0].value);
+        function func2(){
+            var p2 = document.getElementById("p2");
+            p2.innerHTML = "<span>这是span的内容</span>"
+        }
+        function func3(){
+            var p2 = document.getElementById("p2");
+            p2.innerText = "<span>这是span的内容</span>"
+        }
+
+    </script>
+</html>
