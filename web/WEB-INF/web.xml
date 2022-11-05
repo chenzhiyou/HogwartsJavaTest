@@ -3,21 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <servlet>
-        <servlet-name>servletDemo1</servlet-name>
-        <servlet-class>com.servletPro.ServletDemo1</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>servletDemo4</servlet-name>
-        <servlet-class>com.servletPro.ServletDemo4</servlet-class>
-    </servlet>
+    <absolute-ordering></absolute-ordering>
+<!--    <servlet>-->
+<!--        <servlet-name>servletDemo1</servlet-name>-->
+<!--        <servlet-class>com.servletPro.ServletDemo1</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet>-->
+<!--        <servlet-name>servletDemo4</servlet-name>-->
+<!--        <servlet-class>com.servletPro.ServletDemo4</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet>-->
+<!--        <servlet-name>requestDemo1</servlet-name>-->
+<!--        <servlet-class>com.requestPro.RequestDemo1</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>requestDemo1</servlet-name>-->
+<!--        <url-pattern>/requestDemo1</url-pattern>-->
+<!--    </servlet-mapping>-->
 
-    <servlet-mapping>
-        <servlet-name>servletDemo1</servlet-name>
-        <url-pattern>/servletDemo1</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>servletDemo4</servlet-name>
-        <url-pattern>/servletDemo4</url-pattern>
-    </servlet-mapping>
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>servletDemo1</servlet-name>-->
+<!--        <url-pattern>/servletDemo1</url-pattern>-->
+<!--    </servlet-mapping>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>servletDemo4</servlet-name>-->
+<!--        <url-pattern>/servletDemo4</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>
