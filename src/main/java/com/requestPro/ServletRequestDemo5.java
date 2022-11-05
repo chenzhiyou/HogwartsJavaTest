@@ -14,6 +14,8 @@ public class ServletRequestDemo5 extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 解决乱码问题
+        request.setCharacterEncoding("utf-8");
         // 获取请求的参数
         String username = request.getParameter("username");
         System.out.println("ServletRequestDemo5 username: "+ username);
