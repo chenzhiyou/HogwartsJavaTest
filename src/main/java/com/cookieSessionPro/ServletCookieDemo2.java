@@ -19,7 +19,15 @@ public class ServletCookieDemo2 extends HttpServlet {
         for (Cookie cookie: cookies){
             String name = cookie.getName();
             String value = cookie.getValue();
+
+            // 删除cookie
+            if(cookie.equals("data")){
+                cookie.setMaxAge(0);
+                cookie.setValue("newzhangsaan");
+                response.addCookie(cookie);
+            }
             System.out.println(name + ": "+ value);
         }
+
     }
 }
