@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(function (){
+            $("#btn").click(function (){
+                // 后代选择器
+                $("div span").css("color", "red");
+                // 子选择器
+                $("div>span").css("color", "green");
+                // 属性选择器
+                $("input[type='password']").css("border", "1px solid red");
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <span>这是div标签下的span标签</span>
+    <span>这是div标签下的span标签</span>
+    <p>
+        <span>这是p标签下的span标签</span>
+        <span>这是p标签下的span标签</span>
+    </p>
+</div>
+<form name="login" method="post">
+    <table>
+        <tr>
+            <td>用户名</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>爱好</td>
+            <td>
+                <input type="checkbox" name="love" value="game"/> 游戏
+                <input type="checkbox" name="love" value="movie"/>电影
+                <input type="checkbox" name="love" value="music"/>音乐
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="password" value="注册"></td>
+        </tr>
+    </table>
+</form>
+<button id="btn">
+    点击测试
+</button>
+</body>
+</html>

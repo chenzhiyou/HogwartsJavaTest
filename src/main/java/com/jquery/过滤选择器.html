@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(function (){
+            $("#btn").click(function (){
+                $("tr:first").css("color", "red")
+                $("tr:last").css("color", "green")
+            });
+        });
+    </script>
+</head>
+<body>
+<table border="1" width="400" align="center" cellpadding="0" cellspacing="0">
+  <caption>表格的标题</caption>
+    <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    <tr align="center">
+        <td>1</td>
+        <td>杨过</td>
+        <td>37</td>
+    </tr>
+    <tr align="center">
+        <td>2</td>
+        <td>老顽童</td>
+        <td>40</td>
+    </tr>
+    <tr align="center">
+        <td>3</td>
+        <td>不倒翁</td>
+        <td>44</td>
+    </tr>
+</table>
+<button id="btn">
+    点击测试
+</button>
+</body>
+</html>

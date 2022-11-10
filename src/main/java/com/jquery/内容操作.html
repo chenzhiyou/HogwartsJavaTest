@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容操作</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(function (){
+            $("#btn").click(function (){
+                var html = $("p").html();
+                alert(html)
+                $("p").html("<span>这是我设置的内容</span>")
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <span id="p">这是div下的span标签</span>
+    <span >这是div下的span标签2</span>
+
+    <p>
+        <span>这是P标签下的span标签</span>
+        <span>这是P标签下的span标签2</span>
+    </p>
+</div>
+<button id="btn">点击测试</button>
+</body>
+</html>

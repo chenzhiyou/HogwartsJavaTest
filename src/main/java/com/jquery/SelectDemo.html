@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        // window.onload = function (){
+        //     document.getElementById("btn").onclick = function (){
+        //         var pArr = document.getElementsByTagName("p");
+        //         alert(pArr[0].innerHTML);
+        //     }
+        // }
+        $(function (){// 页面加载完成之后，再去执行里面的内容
+            $("#btn").click(function (){
+                alert($("p").html());
+                alert($("#div1").html());
+                alert($(".cls").html());
+                // var pArr = document.getElementsByTagName("p");
+                // pArr[0].style.color = "red";
+                // 并集选择器
+                $("p, .cls").css("color", "green");
+            });
+        })
+    </script>
+</head>
+<body>
+<p>这是P1标签的内容</p>
+<p>这是P2标签的内容</p>
+<div id="div1">div1</div>
+<span class="cls">这是span1的内容</span>
+<span class="cls">这是span2的内容</span>
+<button id="btn">点击测试</button>
+
+</body>
+</html>

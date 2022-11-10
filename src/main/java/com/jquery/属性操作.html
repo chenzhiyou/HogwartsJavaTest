@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性操作</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(function (){
+            $("#btn").click(function (){
+                var id = $("#bj").attr("id");
+                alert(id);
+            });
+        });
+    </script>
+</head>
+<body>
+<ul>
+    <li id="bj" name="beijing" xxx=""yyyy> 北京</li>
+    <li id="tj" name="tianjian">天津</li>
+</ul>
+<input type="checkbox" id="hobby" xxx="yyy"/><br/>
+<button id="btn">点击测试</button>
+</body>
+</html>

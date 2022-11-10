@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD操作</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(function (){
+            $("#btn").click(function (){
+                // 在元素内部
+                $("#city").append($("#cs"));
+                $("#city").prepend($("#cs"));
+
+                // 元素的外部
+                $("#bj").after($("#cs"));
+            });
+        });
+    </script>
+</head>
+<body>
+<ul id="city">
+    <li id="bj" name="beijing" xxx=""yyyy> 北京</li>
+    <li id="tj" name="tianjian">天津</li>
+    <li id="cq" name="chongqing">重庆</li>
+</ul>
+<ul id="love">
+    <li id="cs" name="changsha">长沙</li>
+    <li id="cd" name="chengdu">成都</li>
+</ul>
+<input type="checkbox" id="hobby" xxx="yyy"/>box<br/>
+<button id="btn">点击测试</button>
+</body>
+</html>
