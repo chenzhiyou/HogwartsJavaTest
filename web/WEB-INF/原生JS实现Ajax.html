@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生JS实现Ajax</title>
+    <script>
+        function ajaxFun(){
+            var xmlhttp;
+            if (window.XMLHttpRequest){
+                xmlhttp = new XMLHttpRequest();
+            }else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            // 向服务器发送请求
+            // 异步需要绑定
+            xmlhttp.onreadystatechange = function (){
+                if (xmlhttp.readyState==4 && xmlhttp.status==200){
+                    alert(xmlhttp.responseText);
+                }
+            }
+            xmlhttp.open("GET","/javaCourse_war_exploded/ServletAjaxDemo", true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+<p> 这是P标签的内容</p>
+<form>
+    <input type="text" name="username">
+</form>
+<button id="btn">测试Ajax请求</button>
+</body>
+</html>

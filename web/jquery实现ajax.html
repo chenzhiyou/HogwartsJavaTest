@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现Ajax</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(function (){
+            $("#btn").click(function (){
+                $.ajax({
+                    url:"/javaCourse_war_exploded/ServletAjaxDemo", // 请求地址
+                    type: "GET", // 请求方式
+                    // data: "username=zhangsan", // 请求的参数
+                    data:{username:"zhangsan"},
+                    dataType: "json", // 返回纯文本字符串
+                    success:function (data){
+                        // document.getElementById("div1").innerHTML = data;
+                        document.getElementById("div1").innerHTML = data.name;
+                        // document.getElementById("div1").innerHTML = data.age;
+                    },
+                    error:function(){
+                        alert("出错了");
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="div1"></div>
+<p> 这是P标签的内容</p>
+<form>
+    <input type="text" name="username">
+</form>
+<button id="btn">测试Ajax请求</button>
+</body>
+</html>
