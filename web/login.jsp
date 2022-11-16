@@ -236,8 +236,10 @@
                         if(data == "success"){
                             window.alert("注册成功！");
                             window.location.href="./login.jsp";
-                        }else{
+                        }else if (data == "exists"){
                             register_error.text('该账号已被注册!');
+                        }else{
+                            register_error.text('注册失败!');
                         }
                     }
                 });
