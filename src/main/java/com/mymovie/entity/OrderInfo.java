@@ -10,7 +10,7 @@ public class OrderInfo {
     private long userId;
     private long scheduleId;
     private String orderPosition;
-    private Integer orderState;
-    private Integer orderPrice;
+    private int orderState;
+    private int orderPrice;
     private Date orderTime;
 }

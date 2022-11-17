@@ -83,6 +83,7 @@ public class MovieController {
         JSONObject jsonObject = new JSONObject();
         Movie movieById = movieServices.findMovieById(movie_id);
         jsonObject.put("data", movieById);
+        jsonObject.put("cinemaList", "");
         return jsonObject;
     }
 
