@@ -4,7 +4,7 @@ import com.mymovie.entity.User;
 
 import java.util.List;
 
-public interface UserServices {
+public interface UserService {
 
     /**
      * 登录

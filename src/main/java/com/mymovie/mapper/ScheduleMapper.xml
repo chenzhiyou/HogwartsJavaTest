@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mymovie.mapper.ScheduleMapper">
+    <resultMap id="BaseResultMap" type="com.mymovie.entity.Schedule">
+        <id property="scheduleId" column="schedule_id" javaType="long"></id>
+        <result property = "hallId" column="hall_id" javaType="long"></result>
+        <result property = "movieId" column="movie_id" javaType="long"></result>
+        <result property = "scheduleStartTime" column="schedule_startTime" javaType="java.lang.String"></result>
+        <result property = "schedulePrice" column="schedule_price" ></result>
+        <result property = "scheduleRemain" column="schedule_remain" ></result>
+        <result property = "scheduleState" column="schedule_state" ></result>
+
+    </resultMap>
+    <select id="findScheduleByMovieAndCinema" resultMap="BaseResultMap">
+        select * from schedule s
+            inner join hall h on s.hall_id = h.hall_id
+        where s.movie_id=#{movieId} and h.cinema_id =#{cinemaId}
+    </select>
+</mapper>
+

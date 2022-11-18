@@ -2,14 +2,14 @@ package com.mymovie.service.impl;
 
 import com.mymovie.entity.User;
 import com.mymovie.mapper.UserMapper;
-import com.mymovie.service.UserServices;
+import com.mymovie.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class UserServicesImpl implements UserServices {
+public class UserServicesImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;

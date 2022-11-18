@@ -324,8 +324,8 @@
                                     "</div>" +
                                 "</a>" +
                                 "<div class=\"movie-detail movie-detail-strong movie-sale\">" +
-                                    "<a href=" + obj.data[i].movieId + "\"buyTickets.jsp?movie_id=\" class=\"active\" target=\"_blank\" data-act=\"salePlayingMovie-click\" data-val=\"{movieid:42964}\">购 票</a>" +
-                                "</div>" +
+                            "<a href=\"./buyTickets.jsp?movie_id="+ obj.data[i].movieId +"\"class=\"active\" target=\"_blank\" data-act=\"salePlayingMovie-click\" data-val=\"{movieid:42964}\">购 票</a>"
+                        "</div>" +
                             "</div>" +
                         "</li>";
                         MoiveLiHot.append(htmlHot);

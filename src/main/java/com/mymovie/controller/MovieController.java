@@ -1,12 +1,13 @@
 package com.mymovie.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.mymovie.entity.Cinema;
 import com.mymovie.entity.Movie;
-import com.mymovie.service.MovieServices;
+import com.mymovie.service.CinemaService;
+import com.mymovie.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -16,7 +17,9 @@ import java.util.List;
 @RequestMapping("/movie")
 public class MovieController {
     @Autowired
-    private MovieServices movieServices;
+    private MovieService movieServices;
+    @Autowired
+    private CinemaService cinemaService;
 
     @RequestMapping("/findAllMovies")
     @ResponseBody
@@ -82,8 +85,11 @@ public class MovieController {
     public JSONObject findMovieById(Integer movie_id){
         JSONObject jsonObject = new JSONObject();
         Movie movieById = movieServices.findMovieById(movie_id);
+        // 查询影院列表
+        List<Cinema> cinemaList = cinemaService.findCinemasByMovieId(movie_id);
+
         jsonObject.put("data", movieById);
-        jsonObject.put("cinemaList", "");
+        jsonObject.put("cinemaList", cinemaList);
         return jsonObject;
     }
 

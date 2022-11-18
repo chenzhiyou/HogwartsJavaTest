@@ -6,14 +6,14 @@ import com.mymovie.entity.User;
 import com.mymovie.mapper.CommentMapper;
 import com.mymovie.mapper.MovieMapper;
 import com.mymovie.mapper.UserMapper;
-import com.mymovie.service.MovieServices;
+import com.mymovie.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class MovieServiceImpl implements MovieServices {
+public class MovieServiceImpl implements MovieService {
 
     @Autowired
     private MovieMapper movieMapper;

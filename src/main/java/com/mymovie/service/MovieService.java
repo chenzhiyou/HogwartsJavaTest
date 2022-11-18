@@ -4,7 +4,7 @@ import com.mymovie.entity.Movie;
 
 import java.util.List;
 
-public interface MovieServices {
+public interface MovieService {
     /**
      * 根据电影状态查询电影
      * @param movieState

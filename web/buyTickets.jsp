@@ -404,7 +404,7 @@
             for(var i = 0;i< obj.cinemaList.length;i++){
                 var scheduleCount = 0;
                 for(var j = 0;j< obj.cinemaList[i].hallList.length;j++){
-                    if(obj.cinemaList[i].hallList[j].scheduleList.length ==0){
+                    if(obj.cinemaList[i].scheduleList.length ==0){
                         scheduleCount++;
                     }
                 }
@@ -416,9 +416,13 @@
             for(var i=0;i<obj.cinemaList.length;i++){
                 TempPrice[i] = "";
                 for(var j=0;j<obj.cinemaList[i].hallList.length;j++){
-                    for(var p=0;p<obj.cinemaList[i].hallList[j].scheduleList.length;p++){
-                        TempPrice[i] += obj.cinemaList[i].hallList[j].scheduleList[p].schedulePrice;
-                        TempPrice[i] += ",";                  
+                    // for(var p=0;p<obj.cinemaList[i].hallList[j].scheduleList.length;p++){
+                    //     TempPrice[i] += obj.cinemaList[i].hallList[j].scheduleList[p].schedulePrice;
+                    //     TempPrice[i] += ",";
+                    // }
+                    for(var p=0;p<obj.cinemaList[i].scheduleList.length;p++){
+                        TempPrice[i] += obj.cinemaList[i].scheduleList[p].schedulePrice;
+                        TempPrice[i] += ",";
                     }
                 }
                 TempPrice[i] = TempPrice[i].substr(0, TempPrice[i].length - 1);  
@@ -441,8 +445,9 @@
                             "<p class=\"cinema-address\">地址：" + obj.cinemaList[i].cinemaAddress + "</p>" +
                         "</div>" +
                         "<div class=\"buy-btn\">" +
-                            "" + obj.cinemaList[i].cinemaId + "<a href=\"selectSeat.jsp?cinema_id=&movie_id=\">选座购票</a>" + obj.data.movieId + "" +
-                        "</div>" +
+                            // "" + obj.cinemaList[i].cinemaId + "<a href=\"selectSeat.jsp?cinema_id=&movie_id=\">选座购票</a>" + obj.data.movieId + "" +
+                    "" + "<a href=\"selectSeat.jsp?cinema_id=&movie_id=\">选座购票</a>"  +
+                    "</div>" +
                         "<div class=\"price\">" +
                             "<span class=\"rmb red\">￥</span>" +
                             "<span class=\"price-num red\"><span class=\"stonefont\">"+ MinPrice[i].shift() +"</span></span>" +

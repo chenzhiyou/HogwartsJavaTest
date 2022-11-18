@@ -13,4 +13,5 @@ public class Cinema {
     private String cinemaName;
     private String cinemaAddress;
     private List<Hall> hallList; // 所有的放映厅的集合
+    private List<Schedule> scheduleList; // 所有场次的集合
  }
