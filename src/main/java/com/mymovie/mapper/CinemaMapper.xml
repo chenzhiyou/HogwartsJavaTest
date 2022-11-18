@@ -14,5 +14,9 @@
             inner join cinema c on h.cinema_id = c.cinema_id
         where s.movie_id=#{movieId}
     </select>
+
+    <select id="findCinemaByCinemaId" resultMap="BaseResultMap">
+        select * from cinema where cinema_id=#{cinemaId}
+    </select>
 </mapper>
 

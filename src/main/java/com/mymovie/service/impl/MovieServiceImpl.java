@@ -53,7 +53,7 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public Movie findMovieById(int movieId) {
+    public Movie findMovieById(long movieId) {
         Movie movie = movieMapper.findMovieById(movieId);
         // 查询评论列表
         List<Comment> commentList = commentMapper.findCommentByMovieId(movieId);

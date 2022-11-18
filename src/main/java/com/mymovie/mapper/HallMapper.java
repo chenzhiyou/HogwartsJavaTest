@@ -12,4 +12,11 @@ public interface HallMapper {
      * @return
      */
     List<Hall> findHallByCinemaId(long cinemaId);
+
+    /**
+     * 根据ID进行查询
+     * @param hallId
+     * @return
+     */
+    Hall findHallById(long hallId);
 }

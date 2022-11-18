@@ -446,7 +446,7 @@
                         "</div>" +
                         "<div class=\"buy-btn\">" +
                             // "" + obj.cinemaList[i].cinemaId + "<a href=\"selectSeat.jsp?cinema_id=&movie_id=\">选座购票</a>" + obj.data.movieId + "" +
-                    "" + "<a href=\"selectSeat.jsp?cinema_id=&movie_id=\">选座购票</a>"  +
+                    "" + "<a href=\"selectSeat.jsp?cinema_id="+obj.cinemaList[i].cinemaId+"&movie_id="+getUrlParams('movie_id')+"\">选座购票</a>"  +
                     "</div>" +
                         "<div class=\"price\">" +
                             "<span class=\"rmb red\">￥</span>" +

@@ -48,5 +48,5 @@ public interface MovieMapper {
      * @param movieId
      * @return
      */
-    Movie findMovieById(int movieId);
+    Movie findMovieById(long movieId);
 }

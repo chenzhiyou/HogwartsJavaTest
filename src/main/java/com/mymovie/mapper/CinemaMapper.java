@@ -12,4 +12,11 @@ public interface CinemaMapper {
      * @return
      */
     List<Cinema> findCinemasByMovieId(long movieId);
+
+    /**
+     * 根据放映厅ID查询电影院实体
+     * @param cinemaId
+     * @return
+     */
+    Cinema findCinemaByCinemaId(long cinemaId);
 }

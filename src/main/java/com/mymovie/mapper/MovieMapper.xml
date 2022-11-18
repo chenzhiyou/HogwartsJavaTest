@@ -44,7 +44,7 @@
         select * from movie where movie_state=1 and movie_type like '%${type}%';
     </select>
 
-    <select id="findMovieById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <select id="findMovieById" parameterType="long" resultMap="BaseResultMap">
         select * from movie where movie_id=#{movieId}
     </select>
 </mapper>

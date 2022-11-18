@@ -10,5 +10,5 @@ public interface CommentMapper {
      * @param movieId
      * @return
      */
-    List<Comment> findCommentByMovieId(int movieId);
+    List<Comment> findCommentByMovieId(long movieId);
 }

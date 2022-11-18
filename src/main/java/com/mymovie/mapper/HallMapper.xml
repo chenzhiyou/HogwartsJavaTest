@@ -12,5 +12,9 @@
     <select id="findHallByCinemaId" resultMap="BaseResultMap">
         select * from hall where cinema_id=#{cinemaId}
     </select>
+
+    <select id="findHallById" resultMap="BaseResultMap">
+        select * from hall where hall_id=#{hallId}
+    </select>
 </mapper>
 
