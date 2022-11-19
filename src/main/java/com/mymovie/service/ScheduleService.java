@@ -14,4 +14,6 @@ public interface ScheduleService {
      */
     List<Schedule> findScheduleByMovieAndCinema(long movieId, long cinemaId);
 
+    Schedule findScheduleById(long scheduleId);
+
 }

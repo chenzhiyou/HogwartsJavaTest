@@ -197,8 +197,8 @@
                         "<td> <span class=\"lang\">" + obj.data[i].scheduleMovie.movieCountry +"</span> </td>" +
                         "<td> <span class=\"hall\">" + obj.data[i].scheduleHall.hallName + "</span> </td>" +
                         "<td> <span class=\"sell-price\"> <span class=\"stonefont\">" + obj.data[i].schedulePrice + "</span> </span> </td>" +
-                        "<td> <a href="+ obj.data[i].scheduleId +"\"buySeat.jsp?schedule_id=\" class=\"buy-btn normal\">选座购票</a> </td>" +
-                    "</tr>"   
+                        "<td> <a href=\"./buySeat.jsp?schedule_id="+ obj.data[i].scheduleId+"\" class=\"buy-btn normal\">选座购票</a> </td>" +
+                    "</tr>"
                             );
             }
         }

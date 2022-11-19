@@ -18,5 +18,9 @@
             inner join hall h on s.hall_id = h.hall_id
         where s.movie_id=#{movieId} and h.cinema_id =#{cinemaId}
     </select>
+
+    <select id="findScheduleById" resultMap="BaseResultMap">
+        select * from schedule where schedule_id=#{scheduleId}
+    </select>
 </mapper>
 

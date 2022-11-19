@@ -8,4 +8,6 @@ import java.util.List;
 public interface ScheduleMapper {
 
     List<Schedule> findScheduleByMovieAndCinema(@Param("movieId") long movieId, @Param("cinemaId") long cinemaId);
+
+    Schedule findScheduleById(@Param("scheduleId")long scheduleId);
 }

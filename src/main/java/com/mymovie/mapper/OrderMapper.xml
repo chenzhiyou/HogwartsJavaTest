@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mymovie.mapper.OrderMapper">
+    <resultMap id="BaseResultMap" type="com.mymovie.entity.OrderInfo">
+        <id property="orderId" column="order_id" javaType="java.lang.String"></id>
+        <result property = "userId" column="user_id" javaType="long"></result>
+        <result property = "scheduleId" column="schedule_id" javaType="long"></result>
+        <result property = "orderPosition" column="order_position" javaType="java.lang.String"></result>
+        <result property = "orderState" column="order_state" ></result>
+        <result property = "orderPrice" column="order_price" ></result>
+        <result property = "orderTime" column="order_time" javaType="java.util.Date"></result>
+    </resultMap>
+    <select id="findOrdersByScheduleId" resultMap="BaseResultMap">
+        select * from orderinfo where schedule_id=#{scheduleId} and order_state!=2
+    </select>
+
+</mapper>
+
