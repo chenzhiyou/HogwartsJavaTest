@@ -16,5 +16,10 @@
         select * from orderinfo where schedule_id=#{scheduleId} and order_state!=2
     </select>
 
+    <insert id="addOrder" parameterType="com.mymovie.entity.OrderInfo" >
+        insert into
+            orderinfo(order_id,order_position,schedule_id,user_id,order_price,order_time)
+        values(#{orderId},#{orderPosition},#{scheduleId},#{userId},#{orderPrice},#{orderTime})
+    </insert>
 </mapper>
 
