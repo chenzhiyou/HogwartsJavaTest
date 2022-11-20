@@ -47,5 +47,31 @@
     <select id="findMovieById" parameterType="long" resultMap="BaseResultMap">
         select * from movie where movie_id=#{movieId}
     </select>
+    <insert id="addMovie" parameterType="com.mymovie.entity.Movie">
+        insert into movie(
+                          movie_cn_name,
+                          movie_fg_name,
+                          movie_actor,
+                          movie_director,
+                          movie_detail,
+                          movie_duration,
+                          movie_type,
+                          movie_score,
+                          movie_releaseDate,
+                          movie_country,
+                          movie_picture)
+        values(
+               #{movieCnName},
+               #{movieFgName},
+               #{movieActor},
+               #{movieDirector},
+               #{movieDetail},
+               #{movieDuration},
+               #{movieType},
+               #{movieScore},
+               #{movieReleaseDate},
+               #{movieCountry},
+               #{moviePicture})
+    </insert>
 </mapper>
 

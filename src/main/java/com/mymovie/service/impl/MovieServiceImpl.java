@@ -66,4 +66,9 @@ public class MovieServiceImpl implements MovieService {
         movie.setCommentList(commentList);
         return movie;
     }
+
+    @Override
+    public Integer addMovie(Movie movie) {
+        return movieMapper.addMovie(movie);
+    }
 }

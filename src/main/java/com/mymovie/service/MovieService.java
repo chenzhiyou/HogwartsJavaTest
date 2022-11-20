@@ -49,4 +49,11 @@ public interface MovieService {
      * @return
      */
     Movie findMovieById(long movieId);
+
+    /**
+     * 添加电影
+     * @param movie
+     * @return
+     */
+    Integer addMovie(Movie movie);
 }
