@@ -63,4 +63,16 @@ public class UserController {
         }
         return "fail";
     }
+
+    /**
+     * 注销
+     * @return
+     */
+    @RequestMapping("/logout")
+    @ResponseBody
+    public String logout(HttpServletRequest request){
+        HttpSession session = request.getSession();
+        session.removeAttribute("user");
+        return "index";
+    }
 }

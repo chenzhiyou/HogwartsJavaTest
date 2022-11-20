@@ -1,5 +1,5 @@
 
-<%@ page import="com.tuling.entity.User"%>
+<%@ page import="com.mymovie.entity.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
     User user = (User)request.getSession().getAttribute("user");
