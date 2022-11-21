@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON语法</title>
+    <script>
+        // 获取数据
+        var person= {"name":"wowo", "age":23, "sex":"男", status: true};
+        alert(person.age)
+        alert(person["sex"]);
+        // 遍历
+        for (var key in person){
+            alert(key);
+            alert(person[key]);
+        }
+        // 对象里面嵌套对象
+        var person= {"name":"wowo", "age":23, obj:{"id":1, "name":"obj"}};
+        var personListObj= {
+            "personList":
+            [
+                {"name":"wowo", "age":23},
+                {"name": "hhh", "age": 14}
+            ]
+        }
+        var personList = personListObj.personList;
+        for (var i=0; i<personList.length; i++){
+            let personObj = personList[i];
+            for (var key in personObj){
+                console.log(personObj[key]);
+            }
+            console.log("-------------------");
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

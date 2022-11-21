@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mymovie.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.mymovie.entity.User">
+        <id property="userId" column="user_id" javaType="long"></id>
+        <result property = "userName" column="user_name" javaType="java.lang.String"></result>
+        <result property = "userPwd" column="user_pwd" javaType="java.lang.String"></result>
+        <result property = "userEmail" column="user_email" javaType="java.lang.String"></result>
+        <result property = "userRole" column="user_role" javaType="java.lang.Integer"></result>
+        <result property = "userHeadImg" column="user_headImg" javaType="java.lang.String"></result>
+
+    </resultMap>
+    <select id="findUserById" resultMap="BaseResultMap">
+        select * from user where user_id=#{userId}
+    </select>
+    <select id="findUserByName" resultMap="BaseResultMap">
+        select * from user where user_name=#{userName}
+    </select>
+
+    <insert id="addUser" parameterType="com.mymovie.entity.User">
+        insert into user (user_name, user_pwd, user_email) values (#{userName}, #{userPwd}, #{userEmail})
+    </insert>
+</mapper>
+

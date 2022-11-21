@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mymovie.mapper.CommentMapper">
+    <resultMap id="BaseResultMap" type="com.mymovie.entity.Comment">
+        <id property="commentId" column="comment_id" javaType="long"></id>
+        <result property = "userId" column="user_id" javaType="long"></result>
+        <result property = "commentContent" column="comment_content" javaType="java.lang.String"></result>
+        <result property = "movieId" column="movie_id" javaType="long"></result>
+        <result property = "commentTime" column="comment_time" javaType="java.util.Date"></result>
+    </resultMap>
+    <select id="findCommentByMovieId" resultMap="BaseResultMap">
+        select * from comment where movie_id=#{movieId}
+    </select>
+</mapper>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(function (){
+            $("#username").blur(function (){ // 失去焦点发送请求
+                var username =$(this).val();
+                $.ajax({
+                    url: "/javaCourse_war_exploded/ServletRegisterDemo",
+                    type: "post",
+                    data:{usernameL:username},
+                    dataType:"json",
+                    success:function (data){
+                        if (data.isExsits){
+                            $("username_tip").html(data.msg);
+                            $("username_tip").html("color", "red");
+                        }else{
+
+                        }
+                        alert(data);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body><form method="post">
+    <table>
+        <tr>
+            <td>用户名</td>
+            <td><input type="text" name="username" id="username" placeholder="请输入用户名"></td>
+            <span id="username_tip"></span>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password" name="password" placeholder="请输入密码" id="password"></td>
+        </tr>
+        <tr>
+            <td>爱好</td>
+            <td>
+                <input type="checkbox" name="love" value="game"/> 游戏
+                <input type="checkbox" name="love" value="movie"/>电影
+                <input type="checkbox" name="love" value="music"/>音乐
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="password" value="注册"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
