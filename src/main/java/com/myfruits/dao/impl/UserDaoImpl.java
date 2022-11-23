@@ -3,6 +3,7 @@ package com.myfruits.dao.impl;
 import com.myfruits.dao.UserDao;
 import com.myfruits.domain.User;
 import com.myfruits.util.DBUtils;
+import com.myfruits.util.DruidUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +14,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public int add(User user) throws SQLException {
         // 1、 获取数据库连接
-        Connection connection = DBUtils.getConnection();
+        Connection connection = DruidUtils.getConnection();
         PreparedStatement preparedStatement = null;
         // 2、 获取执行SQL语句对象
         String sql = "insert into user(email, phone, pwd, uname) values (?,?,?,?)";
@@ -30,7 +31,7 @@ public class UserDaoImpl implements UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            DBUtils.closeAll(connection, preparedStatement, null);
+            DruidUtils.closeAll(connection, preparedStatement, null);
         }
         return 0;
     }
@@ -38,7 +39,9 @@ public class UserDaoImpl implements UserDao {
     @Override
     public User findByStr(String str) throws SQLException {
         // 1、 获取数据库连接
-        Connection connection = DBUtils.getConnection();
+//        Connection connection = DBUtils.getConnection();
+        // 使用数据库连接池的方式来建立连接
+        Connection connection = DruidUtils.getConnection();
         PreparedStatement preparedStatement = null;
         User user =null;
         try {
@@ -58,7 +61,7 @@ public class UserDaoImpl implements UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            DBUtils.closeAll(connection, preparedStatement, null);
+            DruidUtils.closeAll(connection, preparedStatement, null);
         }
         return user;
     }
