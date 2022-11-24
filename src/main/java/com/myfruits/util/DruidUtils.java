@@ -38,6 +38,10 @@ public class DruidUtils {
         }
         return null;
     }
+    // 获取数据源
+    public static DataSource getDataSource(){
+        return dataSource;
+    }
     // 关闭数据库
     public static void closeAll(Connection connection , Statement statement, ResultSet resultSet) throws SQLException {
         if (resultSet !=null){
