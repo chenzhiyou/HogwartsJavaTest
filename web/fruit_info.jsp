@@ -1,6 +1,6 @@
-<%@ page import="com.tuling.domain.Fruit" %>
+<%@ page import="com.myfruits.domain.Fruit" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.tuling.domain.User" %>
+<%@ page import="com.myfruits.domain.User" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -13,7 +13,7 @@
   <%
     Fruit fruit=(Fruit)request.getAttribute("fruit");
     List<Fruit> hotFruits=(List<Fruit>)request.getAttribute("fruits");
-    User user=new User(0);
+    User user=new User();
     if(session.getAttribute("user")!=null)
        user=(User)session.getAttribute("user");
 

@@ -63,7 +63,7 @@
             "        <a href=\""+request.getContextPath()+"/fruitServlet?method=info&uid="+id+"&fid="+fruit.getFid()+"\">"+fruit.getFname()+"</a>\n" +
             "      </div>\n" +
             "      <div class=\"fruit_num\">\n" +
-            "        "+fruit.getSpec()+"\n" +
+//            "        "+fruit.getSpec()+"\n" +
             "      </div>\n" +
             "      <div class=\"fruit_mon\">\n" +
             "        "+fruit.getUp()+"\n" +

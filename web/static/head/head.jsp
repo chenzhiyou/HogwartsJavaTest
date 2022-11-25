@@ -1,4 +1,4 @@
-<%@ page import="com.tuling.domain.User" %>
+<%@ page import="com.myfruits.domain.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
