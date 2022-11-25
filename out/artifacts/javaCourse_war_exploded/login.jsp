@@ -37,7 +37,7 @@
           <span class="h01">会员登陆</span>
           <div class="xhr"></div>
         </div>
-        <form action=<%=request.getContextPath()%>/userServlet?method=login  method="post">
+        <form action=<%=request.getContextPath()%>/LoginServlet method="post">
           <div class="text_box">
             <div class="main"><div class="name">邮箱/手机：</div>
               <input type="text" name="str" id="str" value="" />

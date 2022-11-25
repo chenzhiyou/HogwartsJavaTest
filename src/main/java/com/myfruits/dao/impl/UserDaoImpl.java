@@ -18,7 +18,7 @@ public class UserDaoImpl implements UserDao {
 
     private QueryRunner queryRunner = new QueryRunner(DruidUtils.getDataSource());
     @Override
-    public int add(User user) throws SQLException {
+    public int add(User user)  {
         // 1、 获取数据库连接
 //        Connection connection = DruidUtils.getConnection();
 //        PreparedStatement preparedStatement = null;
@@ -42,13 +42,18 @@ public class UserDaoImpl implements UserDao {
 //        return 0;
         String sql = "insert into user(email, phone, pwd, uname) values (?,?,?,?)";
         Object[] params= {user.getEmail(), user.getPhone(), user.getPwd(), user.getUname()};
-        int row = queryRunner.update(sql, params);
+        int row = 0;
+        try {
+            row = queryRunner.update(sql, params);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return row;
 
     }
 
     @Override
-    public User findByStr(String str) throws SQLException {
+    public User findByStr(String str)  {
         // 1、 获取数据库连接
 //        Connection connection = DBUtils.getConnection();
         // 使用数据库连接池的方式来建立连接
@@ -77,7 +82,12 @@ public class UserDaoImpl implements UserDao {
 //        return user;
         String sql = "select id, email,pwd, phone, username from user where email = ? or phone = ?";
         Object[] params = {str, str};
-        User user = queryRunner.query(sql, new BeanHandler<User>(User.class), params);
+        User user = null;
+        try {
+            user = queryRunner.query(sql, new BeanHandler<User>(User.class), params);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return user;
 
     }

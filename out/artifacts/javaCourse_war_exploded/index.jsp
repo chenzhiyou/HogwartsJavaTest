@@ -1,6 +1,6 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.tuling.domain.Fruit" %>
-<%@ page import="com.tuling.domain.User" %>
+<%@ page import="com.myfruits.domain.Fruit" %>
+<%@ page import="com.myfruits.domain.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
