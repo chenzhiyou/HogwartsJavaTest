@@ -11,24 +11,24 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "/fruitServlet", value = "/fruitServlet")
-public class FruitServlet extends HttpServlet {
+public class FruitServlet extends BaseServlet {
 
     private FruitService fruitService = new FruitServiceImpl();
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String method = request.getParameter("method");
-        if (method.equals("hot")){
-            hot(request, response); // 热卖列表
-        }else if (method.equals("info")){// 根据水果查询详情
-            info(request, response);
-        }
-    }
+//    @Override
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        doPost(request, response);
+//    }
+//
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        String method = request.getParameter("method");
+//        if (method.equals("hot")){
+//            hot(request, response); // 热卖列表
+//        }else if (method.equals("info")){// 根据水果查询详情
+//            info(request, response);
+//        }
+//    }
 
     /**
      * 热卖专区
@@ -45,19 +45,20 @@ public class FruitServlet extends HttpServlet {
      * @param request
      * @param response
      */
-    public void info(HttpServletRequest request, HttpServletResponse response){
+    public String info(HttpServletRequest request, HttpServletResponse response){
         String fidStr = request.getParameter("fid");
         int fid = Integer.parseInt(fidStr);
         Fruit fruit = fruitService.findById(fid);
         request.setAttribute("fruit", fruit);
         hot(request, response);
         // 3、转发到水果页面详情
-        try {
-            request.getRequestDispatcher("/fruit_info.jsp").forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            request.getRequestDispatcher("/fruit_info.jsp").forward(request, response);
+//        } catch (ServletException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        return "forward:/fruit_info.jsp";
     }
 }

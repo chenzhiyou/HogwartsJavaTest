@@ -10,25 +10,25 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet(name = "/userServlet", value = "/UserServlet")
-public class UserServlet extends HttpServlet {
+public class UserServlet extends BaseServlet {
     private UserService userService = new UserServiceImpl();
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 1、获取参数
-        String method = request.getParameter("method");
-        // 2、根据标识做不同的处理
-        if (method.equals("login")){// 登录请求
-            login(request, response);
-        }else if (method.equals("register")){ // 注册
-            register(request, response);
-        }
-
-    }
+//    @Override
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        doPost(request, response);
+//    }
+//
+//    @Override
+//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        // 1、获取参数
+//        String method = request.getParameter("method");
+//        // 2、根据标识做不同的处理
+//        if (method.equals("login")){// 登录请求
+//            login(request, response);
+//        }else if (method.equals("register")){ // 注册
+//            register(request, response);
+//        }
+//
+//    }
 
     /**
      * 登录
@@ -37,7 +37,7 @@ public class UserServlet extends HttpServlet {
      * @throws IOException
      * @throws ServletException
      */
-    public void login(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public String login(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         // 邮箱或者手机号
         String str = request.getParameter("str");
         String pwd = request.getParameter("pwd");
@@ -46,9 +46,13 @@ public class UserServlet extends HttpServlet {
         if (loginUser != null){
             HttpSession session = request.getSession();
             session.setAttribute("user", loginUser);
-            response.sendRedirect(request.getContextPath()+"/index.jsp");
+            // 重定向到首页
+//            response.sendRedirect(request.getContextPath()+"/index.jsp");
+            return "redirect:/index.jsp";
+
         }else {
-            request.getRequestDispatcher("/login.jsp").forward(request, response);
+//            request.getRequestDispatcher("/login.jsp").forward(request, response);
+            return "forward:/login.jsp";
         }
     }
 
@@ -60,7 +64,7 @@ public class UserServlet extends HttpServlet {
      * @throws IOException
      * @throws ServletException
      */
-    public void register(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public String register(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
         String pwd1 = request.getParameter("pwd1");
@@ -71,9 +75,13 @@ public class UserServlet extends HttpServlet {
         if (loginUser != null){
             HttpSession session = request.getSession();
             session.setAttribute("user", loginUser);
-            response.sendRedirect(request.getContextPath()+"/index.jsp");
+            // 重定向到首页
+//            response.sendRedirect(request.getContextPath()+"/index.jsp");
+            return "redirect:/index.jsp";
+
         }else {
-            request.getRequestDispatcher("/reg.jsp").forward(request, response);
+//            request.getRequestDispatcher("/reg.jsp").forward(request, response);
+            return "forward:/login.jsp";
         }
     }
 }
