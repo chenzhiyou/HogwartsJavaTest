@@ -28,7 +28,7 @@
         <span class="h02">赠时令鲜果1份</span>
         <div class="xhr"></div>
       </div>
-      <form action=<%=request.getContextPath()%>/RegisterServler method="post" id="regForm" >
+      <form action=<%=request.getContextPath()%>/userServlet?method=register method="post" id="regForm" >
 <%--          <form action="" method="post" id="regForm" >--%>
               <div class="text_box">
                   <div class="main"><div class="name">邮箱：</div>
