@@ -38,4 +38,73 @@ public class FruitDaoImpl implements FruitDao {
         }
         return null;
     }
+
+    @Override
+    public List<Fruit> findByStr(String str) {
+        String sql = "select * from fruits where fname like ?";
+        Object[] params = {"%"+str+"%"};
+        try {
+            List<Fruit> fruitsList = queryRunner.query(sql, new BeanListHandler<Fruit>(Fruit.class), params);
+            return fruitsList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    @Override
+    public List<Fruit> findAll() {
+        String sql = "select * from fruits";
+        try {
+            List<Fruit> fruitsList = queryRunner.query(sql, new BeanListHandler<Fruit>(Fruit.class));
+            return fruitsList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public int add(Fruit fruit) {
+        String sql = "insert into fruits (fname, spec, up, t1, t2, inum) values (?, ?, ?, ?, ?, ?)";
+        Object[] params = {fruit.getFname(), fruit.getSpec(), fruit.getUp(),
+        fruit.getT1(), fruit.getT2(), fruit.getInum()};
+        try {
+            int num = queryRunner.update(sql, params);
+            return num;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    @Override
+    public int update(Fruit fruit) {
+        String sql = "update fruits fname=?, spec=?, up=?, t1=?, t2=?, inum=? where fid=?";
+        Object[] params = {fruit.getFname(), fruit.getSpec(), fruit.getUp(),
+                fruit.getT1(), fruit.getT2(), fruit.getInum(), fruit.getFid()};
+        try {
+            int num = queryRunner.update(sql, params);
+            return num;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+
+    }
+
+    @Override
+    public int del(int fid) {
+        String sql = "delete from fruits where fid=? ";
+        Object[] params ={fid};
+        try {
+            int num = queryRunner.update(sql, params);
+            return num;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+
+    }
 }

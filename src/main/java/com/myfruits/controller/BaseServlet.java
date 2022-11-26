@@ -10,6 +10,8 @@ import java.lang.reflect.Method;
 public class BaseServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=utf-8");
         // 1、 获取参数
         String methodStr = request.getParameter("method");
         // 如果method==null，统一跳转到首页

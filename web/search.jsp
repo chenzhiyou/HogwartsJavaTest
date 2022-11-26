@@ -1,5 +1,5 @@
-<%@ page import="com.tuling.domain.Fruit" %>
-<%@ page import="com.tuling.domain.User" %>
+<%@ page import="com.myfruits.domain.Fruit" %>
+<%@ page import="com.myfruits.domain.User" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -14,7 +14,7 @@
   <%
     List<Fruit> hotFruits=(List<Fruit>)request.getAttribute("fruits");
     List<Fruit> selFruits=null;
-    User user=new User(0);
+    User user=new User();
     if(session.getAttribute("user")!=null)
       user=(User)session.getAttribute("user");
     if(request.getAttribute("selFruits")!=null)
