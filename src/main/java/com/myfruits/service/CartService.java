@@ -1,7 +1,10 @@
 package com.myfruits.service;
 
 import com.github.javafaker.Bool;
+import com.myfruits.domain.Fruit;
 import com.myfruits.domain.Shop;
+
+import java.util.List;
 
 public interface CartService {
     /**
@@ -36,6 +39,21 @@ public interface CartService {
      */
     Shop find(int uid, int fid);
 
+
+    /**
+     * 根据uid查询购物车列表或者关注列表
+     * @param uid
+     * @return
+     */
+    List<Shop> findByUid(int uid);
+
+
+    /** 显示列表
+     * @param uid
+     * @param flag 根据这个boolean来决定是显示购物车列表还是我的关注列表
+     * @return
+     */
+    List<Fruit> show(int uid, boolean flag);
 
 
 

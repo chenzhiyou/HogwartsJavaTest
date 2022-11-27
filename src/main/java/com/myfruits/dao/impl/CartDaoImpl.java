@@ -1,6 +1,7 @@
 package com.myfruits.dao.impl;
 
 import com.myfruits.dao.CartDao;
+import com.myfruits.domain.Fruit;
 import com.myfruits.domain.Shop;
 import com.myfruits.util.DruidUtils;
 import org.apache.commons.dbutils.QueryRunner;
@@ -59,4 +60,19 @@ public class CartDaoImpl implements CartDao {
 
         return null;
     }
+
+    @Override
+    public List<Shop> findByUid(int uid) {
+        String sql = "select * from shop where uid=?";
+        Object[] params = {uid};
+        try {
+            List<Shop> cardList = queryRunner.query(sql, new BeanListHandler<Shop>(Shop.class), params);
+            return cardList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }
