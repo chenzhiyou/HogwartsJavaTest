@@ -39,8 +39,13 @@ public class CartSerViceImp implements CartService {
     }
 
     @Override
-    public int del(int uid, int fid) {
-        return 0;
+    public Boolean del(int uid, int fid) {
+        int del = cartDao.del(uid, fid);
+        if (del == 1){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     @Override

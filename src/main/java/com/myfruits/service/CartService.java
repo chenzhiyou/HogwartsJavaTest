@@ -29,7 +29,7 @@ public interface CartService {
      * @param fid
      * @return
      */
-    int del(int uid, int fid);
+    Boolean del(int uid, int fid);
 
     /**
      * 查看购物车或者关注列表中是否存在该商品

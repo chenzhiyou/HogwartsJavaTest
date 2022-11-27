@@ -44,6 +44,14 @@ public class CartDaoImpl implements CartDao {
 
     @Override
     public int del(int uid, int fid) {
+        String sql = "delete from shop where fid=? and uid=?";
+        Object[] params = {fid, uid};
+        try {
+            int num = queryRunner.update(sql, params);
+            return num;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return 0;
     }
 

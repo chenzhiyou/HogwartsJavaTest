@@ -112,4 +112,49 @@ public class CartServlet extends BaseServlet {
         request.setAttribute("num", num);
     }
 
+
+    /**
+     * 删除购物车或者取消关注
+     * @param request
+     * @param response
+     * @return
+     */
+    public String del(HttpServletRequest request, HttpServletResponse response){
+        // 1、 获取参数
+        String uidStr = request.getParameter("uid");
+        int uid = Integer.parseInt(uidStr);
+        String fidStr = request.getParameter("fid");
+        int fid = Integer.parseInt(fidStr);
+        String str = request.getParameter("str");
+        Shop shop = new Shop();
+        shop.setUid(uid);
+        shop.setFid(fid);
+        // 2、调用业务逻辑层
+        if (uid != 0){
+            // (1)从数据库里面查询存在的记录
+            Shop returnShop = cartService.find(uid, fid);
+            if ("cart".equals(str)){// 购物车列表的删除
+                shop.setCart(false);
+                shop.setStar(returnShop.isStar());
+            }
+            else if ("star".equals(str)){// 关注列表的删除
+                shop.setCart(returnShop.isCart());
+                shop.setStar(false);
+            }
+            if (shop.isStar() || shop.isStar()){ // 假设有关注或者添加购物车，那么就更新
+                 cartService.update(uid, shop);
+            }else {// 杀菌除
+                cartService.del(uid, fid);
+            }
+            if ("cart".equals(str)){
+                return "forward:/cartServlet?method=show&uid="+uid+"&boob=star";
+            }else{
+                return "forward:/cartServlet?method=show&uid="+uid+"&boob=star";
+            }
+        }else{
+            request.setAttribute("showError", true);
+            return "forward:/login.jsp";
+        }
+
+    }
 }
