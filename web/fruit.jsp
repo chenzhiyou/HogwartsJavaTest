@@ -1,7 +1,7 @@
-<%@ page import="com.tuling.domain.User" %>
+<%@ page import="com.myfruits.domain.User" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="com.tuling.domain.Fruit" %>
+<%@ page import="com.myfruits.domain.Fruit" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>

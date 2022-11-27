@@ -31,7 +31,7 @@
         for(Fruit fruits:hotFruits)
         {
           out.print("    <div class=\"hot_fruit\">\n" +
-                  "      <div class=\"hf_img\"><a href=\""+request.getContextPath()+"/fruitServlet?method=info&uid="+user.getId()+"&fid="+fruits.getFid()+"\"><img src=\"img/fruits/"+fruits.getFid()+"/(1).jpg\" /></a></div>\n" +
+                  "      <div class=\"hf_img\"><a href=\""+request.getContextPath()+"/fruitServlet?method=info&uid="+user.getId()+"&fid="+fruits.getFid()+"\"><img src=\"static/img/fruits/"+fruits.getFid()+"/(1).jpg\" /></a></div>\n" +
                   "      <div c=\"hf_text\">\n" +
                   "        <div class=\"hf_name\"><a href=\""+request.getContextPath()+"/fruitServlet?method=info&uid="+user.getId()+"&fid="+fruits.getFid()+"\">"+fruits.getFname()+"</a></div>\n" +
                   "        <div class=\"hf_mon\">￥<span>"+fruits.getUp()+"</span></div>\n" +
@@ -89,7 +89,7 @@
             {
               out.print("        <div class=\"fruit_box\">\n" +
                       "          <div class=\"fruit_img\">\n" +
-                      "            <a href=\""+request.getContextPath()+"/fruitServlet?method=info&uid="+ user.getId()+"&fid="+fruit.getFid()+"\"><img src=\"img/fruits/"+fruit.getFid()+"/(1).jpg\" /></a>\n" +
+                      "            <a href=\""+request.getContextPath()+"/fruitServlet?method=info&uid="+ user.getId()+"&fid="+fruit.getFid()+"\"><img src=\"static/img/fruits/"+fruit.getFid()+"/(1).jpg\" /></a>\n" +
                       "          </div>\n" +
                       "          <div class=\"fruit_name\">\n" +
                       "            <a href=\""+request.getContextPath()+"/fruitServlet?method=info&uid="+ user.getId()+"&fid="+fruit.getFid()+"\">"+fruit.getFname()+"</a>\n" +

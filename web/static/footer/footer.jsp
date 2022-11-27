@@ -3,16 +3,16 @@
 <html>
 <head>
     <title></title>
-  <link rel="stylesheet"  type="text/css" href="footer/css/footer.css"/>
+  <link rel="stylesheet"  type="text/css" href="static/footer/css/footer.css"/>
 </head>
 <body>
   <div class="footer" id="footer_img">
     <ul class="foot_ul">
-      <li><img src="footer/imgs/foot_img/foot_a1.jpg" alt="" /></li>
-      <li><img src="footer/imgs/foot_img/foot_a2.jpg" alt="" /></li>
-      <li><img src="footer/imgs/foot_img/foot_a3.jpg" alt="" /></li>
-      <li><img src="footer/imgs/foot_img/foot_a4.jpg" alt="" /></li>
-      <li><img src="footer/imgs/foot_img/foot_a5.jpg" alt="" /></li>
+      <li><img src="static/footer/imgs/foot_img/foot_a1.jpg" alt="" /></li>
+      <li><img src="static/footer/imgs/foot_img/foot_a2.jpg" alt="" /></li>
+      <li><img src="static/footer/imgs/foot_img/foot_a3.jpg" alt="" /></li>
+      <li><img src="static/footer/imgs/foot_img/foot_a4.jpg" alt="" /></li>
+      <li><img src="static/footer/imgs/foot_img/foot_a5.jpg" alt="" /></li>
     </ul>
   </div>
 

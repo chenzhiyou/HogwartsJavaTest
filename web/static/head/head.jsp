@@ -3,7 +3,7 @@
 <html>
 <head>
   <title></title>
-  <link rel="stylesheet" type="text/css" href="head/css/head.css"/>
+  <link rel="stylesheet" type="text/css" href="static/head/css/head.css"/>
   <jsp:include page="/cartServlet?method=num"></jsp:include>
   <%
     User user=new User(0,"","","","");
@@ -49,7 +49,8 @@
 
       <div class="logo">
         <a href="BSindex.jsp">
-          <img src="head/imgs/fdaylogo.png" alt="天天果园-水果网购首选品牌，水果，我们只挑有来头的！"  />
+          <img src="static/head/imgs/fdaylogo.png" alt="天天果园-水果网购首选品牌，水果，我们只挑有来头的！"  />
+<%--          <img src="web/static/head/imgs/fdaylogo.png" alt="天天果园-水果网购首选品牌，水果，我们只挑有来头的！"  />--%>
         </a>
       </div>
 
