@@ -36,4 +36,28 @@ public class BSSServlet extends BaseServlet {
         request.setAttribute("allusers", all);
         return "forward:/allUser.jsp";
     }
+
+    /**
+     * 后台添加用户功能
+     * @param request
+     * @param response
+     * @return
+     */
+    public String adduser(HttpServletRequest request, HttpServletResponse response){
+        // 1、获取参数
+        String name1 = request.getParameter("name1");
+        String email1 = request.getParameter("email1");
+        String phone1 = request.getParameter("phone1");
+        String pwd1 = request.getParameter("pwd1");
+        
+        User user = new User(name1, email1, phone1, pwd1);
+        // 2、调用业务逻辑层
+        User addUser = userService.add(user);
+
+        if (addUser != null){
+            return alluser(request, response);
+        }
+
+        return null;
+    }
 }
