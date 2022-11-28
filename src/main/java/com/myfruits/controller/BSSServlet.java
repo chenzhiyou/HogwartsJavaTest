@@ -60,4 +60,40 @@ public class BSSServlet extends BaseServlet {
 
         return null;
     }
+
+    /**
+     * 根据uid进行查询
+     * @param request
+     * @param response
+     * @return
+     */
+    public String finduser(HttpServletRequest request, HttpServletResponse response){
+        String uidStr = request.getParameter("uid");
+        int uid = Integer.parseInt(uidStr);
+        User user = userService.findUserById(uid);
+        request.setAttribute("user", user);
+        return "forward:/user.jsp";
+    }
+
+    /**
+     * 更新用户
+     * @param request
+     * @param response
+     * @return
+     */
+    public String upuser(HttpServletRequest request, HttpServletResponse response){
+        String name1 = request.getParameter("name2");
+        String email1 = request.getParameter("email2");
+        String phone1 = request.getParameter("phone2");
+        String pwd1 = request.getParameter("pwd2");
+        String uidStr = request.getParameter("uid");
+        int uid = Integer.parseInt(uidStr);
+
+        User user = new User(uid, name1, email1, phone1, pwd1);
+        Boolean update = userService.updateUserInfo(user);
+        if (update){
+            return alluser(request, response);
+        }
+        return null;
+    }
 }

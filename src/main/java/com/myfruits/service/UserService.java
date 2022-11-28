@@ -40,4 +40,11 @@ public interface UserService {
      * @return
      */
     Boolean deleteUser(int id);
+
+    /**
+     * 根据用户ID查询记录
+     * @param id
+     * @return
+     */
+    User findUserById(int id);
 }
