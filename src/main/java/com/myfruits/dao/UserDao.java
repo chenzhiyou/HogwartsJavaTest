@@ -20,26 +20,26 @@ public interface UserDao {
      * 获取用户列表
      * @return
      */
-    public List<User> findAll();
+    List<User> findAll();
 
     /**
      * 根据用户ID查询记录
      * @param id
      * @return
      */
-    public User findUserById(int id);
+    User findUserById(int id);
 
     /**
      * 更新用户信息
      * @param user
      * @return
      */
-    public int updateUserInfo(User user);
+    int updateUserInfo(User user);
 
     /**
      * 删除用户信息
      * @param id
      * @return
      */
-    public int deleteUser(int id);
+    int deleteUser(int id);
 }

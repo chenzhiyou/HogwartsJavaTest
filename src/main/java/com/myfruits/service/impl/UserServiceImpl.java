@@ -6,6 +6,7 @@ import com.myfruits.domain.User;
 import com.myfruits.service.UserService;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class UserServiceImpl implements UserService {
 
@@ -52,5 +53,30 @@ public class UserServiceImpl implements UserService {
             return user;
         }
         return null;
+    }
+
+    @Override
+    public List<User> findAll() {
+        return userDao.findAll();
+    }
+
+    @Override
+    public Boolean updateUserInfo(User user) {
+        int num = userDao.updateUserInfo(user);
+        if (num ==1){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    @Override
+    public Boolean deleteUser(int id) {
+        int num = userDao.deleteUser(id);
+        if (num ==1){
+            return true;
+        }else {
+            return false;
+        }
     }
 }
