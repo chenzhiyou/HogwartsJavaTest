@@ -1,0 +1,93 @@
+# Created at 2023-02-09T09:12:46.603
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,308 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/Users/lixiaochen/Downloads/javaCourse/target/test-classes/logback-test.xml]'.
+
+# Created at 2023-02-09T09:12:46.604
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,424 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set'.
+
+# Created at 2023-02-09T09:12:46.605
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,430 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]'.
+
+# Created at 2023-02-09T09:12:46.605
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,452 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]'.
+
+# Created at 2023-02-09T09:12:46.605
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,481 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@9983638 - setting totalSizeCap to 1 GB'.
+
+# Created at 2023-02-09T09:12:46.606
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,544 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@9983638 - Will use zip compression'.
+
+# Created at 2023-02-09T09:12:46.606
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,547 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@9983638 - Will use the pattern log.zip.path_IS_UNDEFINED/%d{yyyy-MM-dd}.%i.log for the active file'.
+
+# Created at 2023-02-09T09:12:46.606
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,551 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5bcde458 - The date pattern is 'yyyy-MM-dd' from file name pattern 'log.zip.path_IS_UNDEFINED/%d{yyyy-MM-dd}.%i.log.zip'.'.
+
+# Created at 2023-02-09T09:12:46.607
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,551 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5bcde458 - Roll-over at midnight.'.
+
+# Created at 2023-02-09T09:12:46.607
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,556 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5bcde458 - Setting initial period to Thu Feb 09 09:08:45 CST 2023'.
+
+# Created at 2023-02-09T09:12:46.607
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,556 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5bcde458 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead'.
+
+# Created at 2023-02-09T09:12:46.608
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,556 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@5bcde458 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy'.
+
+# Created at 2023-02-09T09:12:46.608
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,559 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property'.
+
+# Created at 2023-02-09T09:12:46.609
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,590 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: bySecond_IS_UNDEFINED.log'.
+
+# Created at 2023-02-09T09:12:46.609
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,590 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [bySecond_IS_UNDEFINED.log]'.
+
+# Created at 2023-02-09T09:12:46.610
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [litemall] to DEBUG'.
+
+# Created at 2023-02-09T09:12:46.610
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com] to DEBUG'.
+
+# Created at 2023-02-09T09:12:46.610
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [ceshiren] to WARN'.
+
+# Created at 2023-02-09T09:12:46.611
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org] to WARN'.
+
+# Created at 2023-02-09T09:12:46.611
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.hogwarts.selenium] to DEBUG'.
+
+# Created at 2023-02-09T09:12:46.611
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.selenium] to DEBUG'.
+
+# Created at 2023-02-09T09:12:46.611
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.hogwarts.interfaceTest] to DEBUG'.
+
+# Created at 2023-02-09T09:12:46.612
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,595 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO'.
+
+# Created at 2023-02-09T09:12:46.613
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,596 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [STDOUT]. Did you define it below instead of above in the configuration file?'.
+
+# Created at 2023-02-09T09:12:46.613
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,596 |-ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.'.
+
+# Created at 2023-02-09T09:12:46.614
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,596 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]'.
+
+# Created at 2023-02-09T09:12:46.615
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,597 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.'.
+
+# Created at 2023-02-09T09:12:46.615
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '09:12:46,598 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@215a34b4 - Registering current configuration as safe fallback point'.
+
+# Created at 2023-02-09T09:16:26.709
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+

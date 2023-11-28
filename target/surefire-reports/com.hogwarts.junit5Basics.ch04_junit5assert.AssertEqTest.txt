@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.hogwarts.junit5Basics.ch04_junit5assert.AssertEqTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.hogwarts.junit5Basics.ch04_junit5assert.AssertEqTest

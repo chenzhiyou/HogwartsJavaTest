@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hogwarts.selenium.ch04_interaction.InteractionTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.119 s - in com.hogwarts.selenium.ch04_interaction.InteractionTest

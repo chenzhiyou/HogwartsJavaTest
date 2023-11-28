@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hogwarts.selenium.ch05_ceshiren.CeShiRenTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.32 s - in com.hogwarts.selenium.ch05_ceshiren.CeShiRenTest

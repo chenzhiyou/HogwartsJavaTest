@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.hogwarts.selenium.webAuto.CookieBaseProTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.hogwarts.selenium.webAuto.CookieBaseProTest
+cookieLogin  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.hogwarts.selenium.webAuto.CookieBaseProTest.saveCookie(CookieBaseProTest.java:25)
+	at com.hogwarts.selenium.webAuto.CookieBaseProTest.cookieLogin(CookieBaseProTest.java:33)
+

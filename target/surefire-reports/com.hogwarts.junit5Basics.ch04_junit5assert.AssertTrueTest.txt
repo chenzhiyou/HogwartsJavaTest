@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.hogwarts.junit5Basics.ch04_junit5assert.AssertTrueTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! - in com.hogwarts.junit5Basics.ch04_junit5assert.AssertTrueTest
-booleanDemo  Time elapsed: 0.001 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.hogwarts.junit5Basics.ch04_junit5assert.AssertTrueTest.booleanDemo(AssertTrueTest.java:18)
-

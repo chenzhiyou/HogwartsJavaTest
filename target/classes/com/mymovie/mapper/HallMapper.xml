@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mymovie.mapper.HallMapper">
+    <resultMap id="BaseResultMap" type="com.mymovie.entity.Hall">
+        <id property="hallId" column="hall_id" javaType="long"></id>
+        <result property = "hallName" column="hall_name" javaType="java.lang.String"></result>
+        <result property = "hallCapacity" column="hall_capacity" ></result>
+        <result property = "cinemaId" column="cinema_id" javaType="long"></result>
+    </resultMap>
+    <select id="findHallByCinemaId" resultMap="BaseResultMap">
+        select * from hall where cinema_id=#{cinemaId}
+    </select>
+
+    <select id="findHallById" resultMap="BaseResultMap">
+        select * from hall where hall_id=#{hallId}
+    </select>
+</mapper>
+

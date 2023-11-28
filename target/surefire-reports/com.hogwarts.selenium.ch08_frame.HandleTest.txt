@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hogwarts.selenium.ch08_frame.HandleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.322 s - in com.hogwarts.selenium.ch08_frame.HandleTest
