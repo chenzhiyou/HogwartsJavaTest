@@ -96,4 +96,21 @@ public class BSSServlet extends BaseServlet {
         }
         return null;
     }
+
+    /**
+     * 删除用户
+     * @param request
+     * @param response
+     * @return
+     */
+    public String deluser(HttpServletRequest request, HttpServletResponse response){
+        // 1、获取参数
+        String uidStr = request.getParameter("uid");
+        int uid = Integer.parseInt(uidStr);
+        Boolean del = userService.deleteUser(uid);
+        if (del){
+            return alluser(request, response);
+        }
+        return null;
+    }
 }
