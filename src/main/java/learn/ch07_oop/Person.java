@@ -12,6 +12,11 @@ public class Person {
     public Person(){
         // 构造方法
     }
+    public Person(float height, String name, Integer age){
+        this.age = age;
+        this.height = height;
+        this.name = name;
+    }
 
     // 行为
     public static void eat(){
@@ -22,6 +27,10 @@ public class Person {
     }
     public static void work(){
         System.out.println("work方法");
+    }
+
+    public static void show(int i){
+        System.out.println("show方法中的i为：" + i);
     }
 
     public static void meet(String meetPersonName){
