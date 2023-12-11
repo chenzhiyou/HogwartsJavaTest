@@ -1,7 +1,31 @@
 package learn.ch27_lambda;
 
+import com.jayway.jsonpath.internal.function.numeric.Sum;
+
 public class ThreadDemo {
+
+    public static void testAdd(SumInterface sumInterface, int a, int b){
+        sumInterface.add(a,b);
+    }
+
+    public static void testSub(SubInterface subInterface, int a, int b){
+        subInterface.sub(a,b);
+    }
     public static void main(String[] args) {
+
+        SumInterface sum = (int a, int b )->{
+            int i = a+b;
+            System.out.println(a+ "+ "+ b + "= " + i);
+        };
+        testAdd(sum, 3,4);
+
+        SubInterface sub = (int a, int b) ->{
+            int i = a-b;
+            System.out.println(a+ "- "+ b + "= " + i);
+            return i;
+        };
+
+        testSub(sub, 3, 2);
         // 1、实现Runnable接口
         Runnable runnable = new MyRunnable();
         Thread thread = new Thread(runnable);
