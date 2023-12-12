@@ -1,4 +1,4 @@
-package learn.ch31_matg;
+package learn.ch31_math;
 
 public class MathDemo {
     public static void main(String[] args) {
