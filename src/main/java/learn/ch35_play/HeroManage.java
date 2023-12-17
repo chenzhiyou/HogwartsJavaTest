@@ -104,7 +104,7 @@ public class HeroManage {
         List<String> names = heroes
                 .stream() // 创建Stream
                 .filter(hero -> hero.getHeroBlood() <100) // 筛选条件
-                .sorted((h1, h2)->Integer.compare(h1.getHeroAttack(), h2.getHeroAttack()))// 比较
+                .sorted((h1, h2)->Integer.compare(h1.getHeroAttack(), h2.getHeroAttack())) // 比较
                 .map(Hero::getHeroName) // String 姓名字符串流
                 .collect(Collectors.toList());
         System.out.println(names);
@@ -120,25 +120,27 @@ public class HeroManage {
         Integer mId  = scanner.nextInt();
         // 根据编号获取我方出战英雄对象
         Hero myHero = null;
-        for (Hero hero: heroes){
-            if (hero.getHeroNum().equals(mId)){
-                myHero = hero;
-                break;
-            }
-        }
-        //heroes.stream().filter(hero -> hero.getHeroNum().equals(mId));
+//        for (Hero hero: heroes){
+//            if (hero.getHeroNum().equals(mId)){
+//                myHero = hero;
+//                break;
+//            }
+//        }
+        // 通过Stream流的方式进行获取
+        myHero = heroes.stream().filter(hero -> hero.getHeroNum().equals(mId)).findFirst().get();
         // 键盘敌方出战英雄编号
         System.out.println("请输入敌方出战英雄的编号： ");
         Integer enemyId = scanner.nextInt();
         // 根据编号获取敌方出战英雄
         Hero enemyHero = null;
 
-        for (Hero hero: heroes){
-            if (hero.getHeroNum().equals(enemyId)){
-                enemyHero = hero;
-                break;
-            }
-        }
+//        for (Hero hero: heroes){
+//            if (hero.getHeroNum().equals(enemyId)){
+//                enemyHero = hero;
+//                break;
+//            }
+//        }
+        enemyHero = heroes.stream().filter(hero -> hero.getHeroNum().equals(enemyId)).findFirst().get();
         //双方开始KO！
         // 打斗后我方英雄的血量 = 我自己的血量 - 敌方的攻击力;
         // 敌方英雄的血量 = 敌方的血量 - 我方的攻击力
