@@ -144,6 +144,7 @@ public class StudentManagement {
             }
             catch (RuntimeException e){
                 System.out.println(e.getMessage());
+                scanner.nextLine();
             }
         }
     }
