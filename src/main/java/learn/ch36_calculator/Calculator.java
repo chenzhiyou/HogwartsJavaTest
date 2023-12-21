@@ -10,7 +10,9 @@ import static java.lang.invoke.MethodHandles.lookup;
 import static org.slf4j.LoggerFactory.getLogger;
 
 public class Calculator {
-    //获得具有所需名称的记录器
+    /**
+     * 获得具有所需名称的记录器
+     */
     static final Logger logger = getLogger(lookup().lookupClass());
 
     public static int result = 0;
