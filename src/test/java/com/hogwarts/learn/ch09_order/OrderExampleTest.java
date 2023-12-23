@@ -18,26 +18,26 @@ public class OrderExampleTest {
     @Test
 //    @Order(1)
 //    @DisplayName("a")
-    void HogwartsOne(){
+    void HogwartsOneTest(){
         System.out.println("第1条测试用例");
     }
 
     @Test
 //    @Order(2)
 //    @DisplayName("b")
-    void HogwartsTwo(){
+    void HogwartsTwoTest(){
         System.out.println("第2条测试用例");
     }
     @Test
 //    @Order(3)
 //    @DisplayName("c")
-    void HogwartsThree(){
+    void HogwartsThreeTest(){
         System.out.println("第3条测试用例");
     }
     @Test
 //    @Order(4)
 //    @DisplayName("d")
-    void HogwartsFour(){
+    void HogwartsFourTest(){
         System.out.println("第4条测试用例");
     }
 }
