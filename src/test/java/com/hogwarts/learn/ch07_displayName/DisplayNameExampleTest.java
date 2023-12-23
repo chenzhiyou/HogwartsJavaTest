@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 // ReplaceUnderscores 替换掉带_部分为空格
 //@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 //IndicativeSentences 将显示名称换为类名, 方法名
-//@DisplayNameGeneration(DisplayNameGenerator.IndicativeSentences.class)
+@DisplayNameGeneration(DisplayNameGenerator.IndicativeSentences.class)
 public class DisplayNameExampleTest {
 
 

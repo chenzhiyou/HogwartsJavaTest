@@ -28,6 +28,5 @@ public class StudentManagementTest {
         assertEquals(id, student.getId());
         assertEquals(name, student.getName());
         assertEquals(sex, student.getSex());
-
     }
 }
