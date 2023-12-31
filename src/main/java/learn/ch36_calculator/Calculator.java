@@ -80,4 +80,38 @@ public class Calculator {
         }
 
     }
+
+    //从100进行减法
+    public int subtract(int... numbers){
+        if (Arrays.stream(numbers).allMatch(u->u>99) || Arrays.stream(numbers).allMatch(u ->u<-99)){
+            logger.warn("请输入范围内的整数");
+            throw new IllegalArgumentException("请输入范围内的整数！");
+        }else {
+            return IntStream.of(numbers).reduce(100, (a, b) ->a-b);
+        }
+    }
+
+    public int subtract(int x, int y){
+        if (x >99 | x< -99 | y >99 | y <-99){
+            logger.warn("请输入范围内的整数");
+            return 0;
+        }else {
+            return x-y;
+        }
+    }
+
+    // 平均值
+    public double average(int... numbers){
+        if (Arrays.stream(numbers).allMatch(u->u>99) || Arrays.stream(numbers).allMatch(u ->u<-99)) {
+            logger.warn("请输入范围内的整数");
+            return 0;
+        }else {
+            return IntStream.of(numbers).average().getAsDouble();
+        }
+    }
+
+    // 字符串拼接
+    public String concatStr(String... words){
+        return String.join(" ", words);
+    }
 }
