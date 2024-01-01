@@ -32,6 +32,7 @@
     <logger name="org" level="WARN" />
     <logger name="com.hogwarts.selenium" level="DEBUG" />
     <logger name="com.selenium" level="DEBUG"/>
+    <logger name="com.hogwarts.learn" level="INFO"/>
     <logger name="com.hogwarts.interfaceTest" level="DEBUG"/>
     <root level="INFO">
         <appender-ref ref="STDOUT" />
