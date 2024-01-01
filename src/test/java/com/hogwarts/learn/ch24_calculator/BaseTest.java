@@ -54,14 +54,20 @@ public class BaseTest {
                 .getTestMethod()
                 .map(Method::getName)
                 .filter(str -> str.startsWith("sub"));
+        Optional<String> optional3 = testInfo
+                .getTestMethod()
+                .map(Method::getName)
+                .filter(str -> str.startsWith("str"));
         if(optional1.isPresent()){
             str = "开始进行加法计算";
         }else if (optional2.isPresent()){
             str = "开始进行减法计算";
-        }else {
+        }else if (optional3.isPresent()) {
             str = "开始进行字符串拼接";
+        }else {
+            str = "开始进行计算";
         }
-        System.out.println(str);
+//        System.out.println(str);
         logger.info(str);
     }
 
@@ -73,7 +79,7 @@ public class BaseTest {
                 .map(Method::getName)// 获取到方法名
                 .filter(str -> str.startsWith("sum")|str.startsWith("sub"));
         String reS = optional.isPresent() ? String.valueOf(sum) : result;
-        System.out.println(reS);
+//        System.out.println(reS);
         logger.info("计算结果为{}"+ reS);
     }
 }

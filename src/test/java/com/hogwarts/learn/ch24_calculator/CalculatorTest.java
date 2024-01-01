@@ -1,13 +1,20 @@
 package com.hogwarts.learn.ch24_calculator;
 
+import learn.ch36_calculator.Calculator;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import org.junit.jupiter.api.function.Executable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Stream;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -88,6 +95,27 @@ public class CalculatorTest extends BaseTest{
         });
         message = illegalArgumentException.getMessage();
         assertTrue(message.contains("请输入范围内的整数！"));
+    }
+
+    @Test
+    public void testOne(){
+        List<Executable> assertList = new ArrayList<>();
+        int sumRe = calculator.sum(66,6);
+        assertEquals(72, sumRe);
+        assertList.add(()->assertEquals(72, sumRe));
+        int subRe = calculator.subtract(20, 3, 6);
+        assertEquals(71, subRe);
+        assertList.add(()->assertEquals(71, subRe));
+        String str = calculator.concatStr(String.valueOf(subRe), "Good");
+        assertEquals("71 Good", str);
+        assertThat(str, is(containsString("Good")));
+        assertList.add(()->assertThat(str, is(containsString("Good"))));
+        assertAll("计算器结果失败",assertList);
+        assertAll("计算器结果失败",
+                ()->assertEquals(72, sumRe),
+                ()->assertEquals(71, subRe),
+                ()->assertThat(str, is(containsString("Good")))
+        );
     }
 
 }

@@ -65,11 +65,12 @@ public class Calculator {
 
     //连续添加
     public int sum(int... numbers) {
-        if(Arrays.stream(numbers).anyMatch(u -> u == 100)){
-            logger.warn("integer is 100！");
-            //拦截，重置，发送某些消息给其他服务端
-            throw new NumberFormatException("integer is 100！");
-        }else if(Arrays.stream(numbers).anyMatch(u -> u > 99) | Arrays.stream(numbers).anyMatch(u -> u < -99)){
+//        if(Arrays.stream(numbers).anyMatch(u -> u == 100)){
+//            logger.warn("integer is 100！");
+//            //拦截，重置，发送某些消息给其他服务端
+//            throw new NumberFormatException("integer is 100！");
+
+        if (Arrays.stream(numbers).anyMatch(u -> u > 99) | Arrays.stream(numbers).anyMatch(u -> u < -99)){
             logger.warn("请输入范围内的整数");
             throw new IllegalArgumentException("请输入范围内的整数！");
 //            throw new NumberFormatException("请输入范围内的整数！");
