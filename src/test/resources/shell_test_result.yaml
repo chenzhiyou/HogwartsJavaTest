@@ -1,0 +1,25 @@
+resultList:
+  - caseName: 'case_1_1'
+    result: true
+  - caseName: 'case_1_2'
+    result: false
+  - caseName: 'case_2_1'
+    result: true
+  - caseName: 'case_2_2'
+    result: false
+  - caseName: 'case_1_1'
+    result: true
+  - caseName: 'case_1_2'
+    result: false
+  - caseName: 'case_2_1'
+    result: true
+  - caseName: 'case_2_2'
+    result: false
+  - caseName: 'case_1_1'
+    result: true
+  - caseName: 'case_1_2'
+    result: false
+  - caseName: 'case_2_1'
+    result: true
+  - caseName: 'case_2_2'
+    result: false

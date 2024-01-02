@@ -3,6 +3,11 @@ allure -- version 查看版本信息
 allure serve 生成在线版本的测试
 allure generate <allure-result中间文件> -o 输出目录(默认  allure-report)
 
+使用allure.properties
+生成allure报告并下载版本到当前项目下:mvn clean test allure:report
+打开allure报告： mvn allure:serve
+优点：不同项目用不同的allure版本不受影响
+
 所有测试节点都是并行，测试节点的配置，所有的测试方法都并行
 junit.jupiter.execution.parallel.mode.default=concurrent
 测试类并行，但是测试方法不并行
