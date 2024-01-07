@@ -1,0 +1,20 @@
+---
+- addNumbers:
+  - 98
+  - -98
+  expect: 0
+- addNumbers:
+  - 98
+  - 98
+  expect: 196
+- addNumbers:
+  - -98
+  - -98
+  expect: -196
+- addNumbers:
+  - 98
+  - 98
+  - 98
+  - 98
+  - 98
+  expect: 490
