@@ -8,7 +8,7 @@ public class FileReaderDemo {
     public static void main(String[] args) {
         FileReader fileReader = null;
         try {
-            fileReader = new FileReader("/Users/lixiaochen/Downloads/javaCourse/test.txt");
+            fileReader = new FileReader("/Users/lixiaochen/Downloads/javaCourse/text文本.txt");
             int res = 0;
 //            System.out.println("读出来的内容为： "+ (char)read);
 
@@ -19,7 +19,7 @@ public class FileReaderDemo {
             // 读取部分内容
             System.out.println("************读取部分数据***************");
             char[] chars = new char[5];
-            fileReader = new FileReader("/Users/lixiaochen/Downloads/javaCourse/test.txt");
+            fileReader = new FileReader("/Users/lixiaochen/Downloads/javaCourse/text文本.txt");
             int read = fileReader.read(chars, 1, 2);
             System.out.println("读取到的个数为： "+ read);
             for (char c : chars){

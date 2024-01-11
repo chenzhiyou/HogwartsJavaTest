@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class FileMethodDemo {
     public static void main(String[] args) throws IOException {
         // 绝对路径实例化
-        File file = new File("/Users/lixiaochen/Downloads/javaCourse/test.txt");
+        File file = new File("/Users/lixiaochen/Downloads/javaCourse/text文本.txt");
         String absolutePath = file.getAbsolutePath();
         System.out.println("文件的绝对路径为： "+ absolutePath);
         String path = file.getPath();
@@ -19,7 +19,7 @@ public class FileMethodDemo {
         System.out.println("文件的长度为： "+ length);
 
         // 相对路径实例化：
-        File relfile = new File("test.txt");
+        File relfile = new File("text文本.txt");
         String relfileAbsolutePath = relfile.getAbsolutePath();
         System.out.println("文件的绝对路径为： "+ relfileAbsolutePath);
         String relfilePath = relfile.getPath();

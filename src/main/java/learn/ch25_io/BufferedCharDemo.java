@@ -7,7 +7,7 @@ public class BufferedCharDemo {
         BufferedReader bufferedReader = null;
         BufferedWriter bufferedWriter = null;
         try {
-            bufferedReader = new BufferedReader(new FileReader("/Users/lixiaochen/Downloads/javaCourse/test.txt"));
+            bufferedReader = new BufferedReader(new FileReader("/Users/lixiaochen/Downloads/javaCourse/text文本.txt"));
             bufferedWriter = new BufferedWriter(new FileWriter("/Users/lixiaochen/Downloads/javaCourse/test2.txt"));
             String str = null;
             while (null != (str = bufferedReader.readLine())) {

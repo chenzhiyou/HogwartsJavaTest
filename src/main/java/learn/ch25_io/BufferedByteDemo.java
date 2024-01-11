@@ -7,7 +7,7 @@ public class BufferedByteDemo {
         BufferedInputStream bufferedInputStream = null;
         BufferedOutputStream bufferedOutputStream = null;
         try {
-            bufferedInputStream = new BufferedInputStream(new FileInputStream("/Users/lixiaochen/Downloads/javaCourse/test.txt"));
+            bufferedInputStream = new BufferedInputStream(new FileInputStream("/Users/lixiaochen/Downloads/javaCourse/text文本.txt"));
             bufferedOutputStream = new BufferedOutputStream(new FileOutputStream("/Users/lixiaochen/Downloads/javaCourse/test2.txt"));
             int res = 0;
             while (-1 != (res = bufferedInputStream.read())){

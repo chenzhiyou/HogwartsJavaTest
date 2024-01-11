@@ -7,7 +7,7 @@ public class FileByteDemo {
         FileInputStream fileInputStream = null;
         FileOutputStream fileOutputStream = null;
         try {
-            fileInputStream = new FileInputStream("/Users/lixiaochen/Downloads/javaCourse/test.txt");
+            fileInputStream = new FileInputStream("/Users/lixiaochen/Downloads/javaCourse/text文本.txt");
             fileOutputStream = new FileOutputStream("/Users/lixiaochen/Downloads/javaCourse/test2.txt");
             int res = 0;
             // 字节为单位的文件读取
